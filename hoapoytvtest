@@ -324,7 +324,7 @@ DiscordLib:Notification("Key System" , "Key Check, Executing Script..." , 3)
 if keyhere.Text == "1f262a60600e30c026663a7ccbed6bab" then
 wait(3)
 ZENHUB:Destroy()
-loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/zeus%20x%20hub%20hoapoytv"))()"))()
+https://raw.githubusercontent.com/Padupo/scrnohop/main/zeus%20x%20hub%20hoapoytv
 else
 DiscordLib:Notification("Key System" , "Key Wrong Try Again" , 3)
 end
@@ -344,7 +344,7 @@ old.Text = "Jon Sub"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
-setclipboard("https://kairobloxc.blogspot.com/")
+setclipboard("I AM FROM")
 end)
 
 
