@@ -340,7 +340,7 @@ old.BorderColor3 = Color3.fromRGB(27, 42, 53)
 old.Position = UDim2.new(0.288607597, 0, 0.782407403, 0)
 old.Size = UDim2.new(0, 178, 0, 32)
 old.Font = Enum.Font.Gotham
-old.Text = "Jon Sub"
+old.Text = "Lấy Hack"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
