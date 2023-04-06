@@ -344,7 +344,7 @@ old.Text = "Jon Sub"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
-setclipboard("I AM FROM")
+setclipboard("https://www.youtube.com/@hoapoytv")
 end)
 
 
