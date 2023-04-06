@@ -288,7 +288,7 @@ TextLabel.Position = UDim2.new(0.518987358, 0, 0.0725925565, 0)
 TextLabel.Size = UDim2.new(0, 174, 0, 25)
 TextLabel.ZIndex = 5
 TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "SCRIPT | KEY SYSTEM"
+TextLabel.Text = "SCRIPT | FREE KEY"
 TextLabel.TextColor3 = Color3.fromRGB(130, 130, 130)
 TextLabel.TextSize = 20.000
 
@@ -298,7 +298,7 @@ getkey.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 getkey.Position = UDim2.new(0.0405063294, 0, 0.532407403, 0)
 getkey.Size = UDim2.new(0, 178, 0, 32)
 getkey.Font = Enum.Font.Gotham
-getkey.Text = "GET KEY"
+getkey.Text = "Lấy KEY"
 getkey.TextColor3 = Color3.fromRGB(255, 255, 255)
 getkey.TextSize = 14.000
 getkey.MouseButton1Click:Connect(function()
