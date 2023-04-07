@@ -340,12 +340,15 @@ old.BorderColor3 = Color3.fromRGB(27, 42, 53)
 old.Position = UDim2.new(0.288607597, 0, 0.782407403, 0)
 old.Size = UDim2.new(0, 178, 0, 32)
 old.Font = Enum.Font.Gotham
-old.Text = "Lấy Hack"
+old.Text = "Lấys Hack"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
-setclipboard("https://www.youtube.com/@hoapoytv")
-end)
+ZENHUB:Destroy()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/oki"))()
+else
+DiscordLib:Notification("Key System" , "Key Wrong Try Again" , 3)
+end
 
 
 UICorner_5.CornerRadius = UDim.new(0, 4)
