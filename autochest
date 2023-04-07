@@ -273,7 +273,7 @@ keyhere.BorderSizePixel = 0
 keyhere.Position = UDim2.new(0.151898727, 0, 0.236111104, 0)
 keyhere.Size = UDim2.new(0, 289, 0, 35)
 keyhere.Font = Enum.Font.SourceSans
-keyhere.PlaceholderText = "Key here..."
+keyhere.PlaceholderText = ""
 keyhere.Text = ""
 keyhere.TextColor3 = Color3.fromRGB(255, 255,255)
 keyhere.TextSize = 14.000
@@ -321,7 +321,7 @@ confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
 confirm.TextSize = 14.000
 confirm.MouseButton1Click:Connect(function()
 DiscordLib:Notification("Key System" , "Key Check, Executing Script..." , 3)
-if keyhere.Text == "3f262a60600e30-HOA-POY-TV" then
+if keyhere.Text == "" then
 wait(3)
 ZENHUB:Destroy()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/oki"))()
