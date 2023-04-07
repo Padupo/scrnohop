@@ -274,7 +274,7 @@ keyhere.Position = UDim2.new(0.151898727, 0, 0.236111104, 0)
 keyhere.Size = UDim2.new(0, 289, 0, 35)
 keyhere.Font = Enum.Font.SourceSans
 keyhere.PlaceholderText = ""
-keyhere.Text = ""
+keyhere.Text = "1"
 keyhere.TextColor3 = Color3.fromRGB(255, 255,255)
 keyhere.TextSize = 14.000
 
