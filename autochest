@@ -351,8 +351,8 @@ DiscordLib:Notification("Key System" , "Key Wrong Try Again" , 3)
 end
 
 
-UICorner_5.CornerRadius = UDim.new(0, 4)
-UICorner_5.Parent = old
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent       = confirm
 
 TextLabel_2.Parent = old
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
