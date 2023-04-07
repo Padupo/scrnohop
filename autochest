@@ -344,7 +344,9 @@ old.Text = "Lấy Hack"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
-setclipboard("https://www.youtube.com/@hoapoytv")
+sZENHUB:Destroy()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/oki"))()
+else
 end)
 
 
