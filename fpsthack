@@ -2127,7 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroscgaming/zeroscgaming/main/RDE.lib/Dark%20UI", true))()
 
-local Library = DarkraiX:Window("FTSXHUB","Blox-Fruit","RightAlt",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("HOAPOYTV","Blox-Fruit","RightAlt",Enum.KeyCode.RightControl);
 
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
