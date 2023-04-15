@@ -186,7 +186,7 @@ Logo.Image = "rbxassetid://12986011583"
 	Hub.Position = UDim2.new(0, 150, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = " Blox Fruit UPD 18"
+	Hub.Text = " Cập nhật update 19"
 	Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.TextSize = 14.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -4010,7 +4010,7 @@ spawn(function()
 						end
 					end
 				end)
-			elseif _G.Select_Mode_Farm == "Fast Mode" then
+			elseif _G.Select_Mode_Farm == "Chế độ nhanh" then
 				pcall(function()
 					if game:GetService("Players").LocalPlayer.Data.SpawnPoint.Value == SPAWNPOINT then
 						if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, NameMon) then
@@ -4222,21 +4222,21 @@ local Main = Library:Tab("Bản thân","rbxassetid://11446825283")
 local Setting = Library:Tab("Cài đặt","rbxassetid://11446835336")
 local Weapon = Library:Tab("vũ khí","rbxassetid://11446859498")
 local Race = Library:Tab("Tộc V4","rbxassetid://11446900930")
-local Stats = Library:Tab("Điểm","rbxassetid://11447069304")
+local Stats = Library:Tab("Cộng Điểm","rbxassetid://11447069304")
 local P = Library:Tab("Người chơi","rbxassetid://11446900930")
 local Teleport = Library:Tab("Bắn Tùm Lum","rbxassetid://11446920523")
 local Dungeon = Library:Tab("Hack raid","rbxassetid://11446957539")
 local DevilFruit = Library:Tab("Fruit+Esp","rbxassetid://11446965348")
-local Shop = Library:Tab("Shop","rbxassetid://6031265976")
-local Misc = Library:Tab("Misc","rbxassetid://11447063791")
-local Op = Library:Tab("Status", "rbxassetid://7040410130")
+local Shop = Library:Tab("Tiktok Shop","rbxassetid://6031265976")
+local Misc = Library:Tab("Vớ vẩn","rbxassetid://11447063791")
+local Op = Library:Tab("Trạng thái bản thân", "rbxassetid://7040410130")
 --------------------------------------------------------------------
 
-Setting:Label("Join My Discord For More Info!")
+Setting:Label("Tham gia máy chủ của tôi để biết thêm thông tin!")
 
 Setting:Line()
 
-Setting:Button("Copy Discord Link",function()
+Setting:Button("Copy Link máy chủ",function()
  
  setclipboard("https://www.youtube.com/@hoapoytv")
  end)
@@ -4269,7 +4269,7 @@ Setting:Slider("Farm Distance",1,100,20,function(value)
  end)
 else
  _G.DistanceMob = 20
-Setting:Slider1("Farm Distance",1,100,20,function(value)
+Setting:Slider1("Khoảng cách đánh",1,100,20,function(value)
  _G.DistanceMob = value
  end)
 end
@@ -4417,7 +4417,7 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
 	game:GetService("ReplicatedStorage").Effect.Container.Respawn:Destroy()
 end
 
-Setting:Toggle("Bring Mob [Normal]",true,function(value)
+Setting:Toggle("gom quái [Bình thường]",true,function(value)
  _G.BringNormal = value
 end)
 
@@ -4643,7 +4643,7 @@ local GameTime = math.floor(workspace.DistributedGameTime+0.5)
 local Hour = math.floor(GameTime/(60^2))%24
 local Minute = math.floor(GameTime/(60^1))%60
 local Second = math.floor(GameTime/(60^0))%60
-Time:Set("[GameTime] : Hours : "..Hour.." Minutes : "..Minute.." Seconds : "..Second)
+Time:Set("[Thời gian đã chơi] : giờ : "..Hour.."v : "..Minute.." giây : "..Second)
 end
 
 spawn(function()
@@ -4658,7 +4658,7 @@ Client = Main:Label1("Client")
 
 function UpdateClient()
 local Fps = workspace:GetRealPhysicsFPS()
-Client:Refresh("[Fps] : "..Fps)
+Client:Refresh("[Fps hiện tại] : "..Fps)
 end
 
 spawn(function()
@@ -4671,7 +4671,7 @@ Client1 = Main:Label1("Client")
 
 function UpdateClient1()
 local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
-Client1:Refresh("[Ping] : "..Ping)
+Client1:Refresh("[Ping độ trễ] : "..Ping)
 end
 
 spawn(function()
@@ -4710,11 +4710,11 @@ if v:IsA("Tool") then
 table.insert(WeaponList ,v.Name)
 end
 end
-local SelectWeapona = Main:Dropdown("Select Weapon",WeaponList,function(value)
+local SelectWeapona = Main:Dropdown("Chọn vũ khí",WeaponList,function(value)
  _G.Select_Weapon = value
  end)
 
-Main:Button("Refresh Weapon",function()
+Main:Button("làm mới vũ khí nếu không thấy",function()
  SelectWeapona:Clear()
  for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
  SelectWeapona:Add(v.Name)
@@ -4848,11 +4848,11 @@ end
 
 Main:Seperator(" Other ")
 
-Main:Dropdown("Select Monster", tableMon, function(vu)
+Main:Dropdown("Chọn quái đập", tableMon, function(vu)
  SelectMonster = vu
  end)
 
-Main:Toggle("Farm Selected Monster",_G.AutoFarmSelectMonster,function(vu)
+Main:Toggle("đập quái đã chọn",_G.AutoFarmSelectMonster,function(vu)
  _G.AutoFarmSelectMonster = vu
 end)
 
@@ -4896,9 +4896,9 @@ spawn(function()
  end
 end)
 
-Main:Seperator(" Mastery ")
+Main:Seperator("cày điểm Mastery ")
  
-Main:Toggle("Auto BF Mastery",_G.AutoFarmFruitMastery,function(value)
+Main:Toggle("Auto cày điểm Mastery trái ác quỷ",_G.AutoFarmFruitMastery,function(value)
   _G.AutoFarmFruitMastery = value
   StopTween(_G.AutoFarmFruitMastery)
   if _G.AutoFarmFruitMastery == false then
@@ -5154,7 +5154,7 @@ Main:Toggle("Auto BF Mastery",_G.AutoFarmFruitMastery,function(value)
    end)
   end)
  
- Main:Toggle("Auto Gun Mastery",_G.AutoFarmGunMastery,function(value)
+ Main:Toggle("Auto cày điểm súng Mastery",_G.AutoFarmGunMastery,function(value)
   _G.AutoFarmGunMastery = value
   StopTween(_G.AutoFarmGunMastery)
   end)
@@ -5505,9 +5505,9 @@ MaterialMethod = {
  }
  end
  
-Main:Seperator(" Materials ")
+Main:Seperator(" Nguyên vật liệu ")
  
- local SelectMaterial = Main:Dropdown("Select Material",MaterialMethod,function(value)
+ local SelectMaterial = Main:Dropdown("Chọn vật liệu",MaterialMethod,function(value)
  _G.SelectMaterial = value
 end)
 
@@ -5707,25 +5707,25 @@ if _G.ChestBypass then
 end
 end)
 
-Main:Toggle("Auto Chest Tween",_G.Grab_Chest,function(vu)
+Main:Toggle("Auto lấy rương Tween",_G.Grab_Chest,function(vu)
 	Grab_Chest = vu
     StopTween(Grab_Chest)
 	_G.Grab_Chest = vu
 end)
 
-Main:Button("Instant Tp Chest (Risk)",function()
+Main:Button("dịch chuyển Tp Chest (Risk)",function()
  loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Chest_onoff"))()
  end)
 
 if World3 then
-Main:Seperator(" Bones ")
+Main:Seperator(" lấy xương chó ")
 
 Main:Toggle("Auto Farm Xương",_G.Auto_Farm_Bone,function(value)
  _G.Auto_Farm_Bone = value
  StopTween(_G.Auto_Farm_Bone)
  end)
 
-Main:Toggle("Auto Trade Bone",_G.Auto_Trade_Bone,function(value)
+Main:Toggle("Auto random điểm xongw",_G.Auto_Trade_Bone,function(value)
  _G.Auto_Trade_Bone = value
  end)
 
@@ -8916,47 +8916,47 @@ end
 ProximityPrompt.Triggered:Connect(onProximity)
 end)
 
-Race:Button("Clock Acces.", function()
+Race:Button("Truy cập đồng hồ.", function()
     game:GetService("Workspace").Map["Temple of Time"].DoNotEnter:Remove()
     game:GetService("Workspace").Map["Temple of Time"].ClockRoomExit:Remove()
 end)
 
-Race:Toggle("Disabled Inf Stairs", nil, function(value)
+Race:Toggle("Cầu thang Inf dành cho người khuyết tật", nil, function(value)
 	game.Players.LocalPlayer.Character.InfiniteStairs.Disabled = value
 end)
    Race:Line()
  
-  Race:Button("Teleport Cyborg Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Dịch chuyển cửa Cyborg (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28492.4140625, 14894.4267578125, -422.1100158691406))
   end)
   
-  Race:Button("Teleport Fish Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Cửa cá dịch chuyển (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28224.056640625, 14889.4267578125, -210.5872039794922))
   end)
   
-  Race:Button("Teleport Ghoul Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Cửa dịch chuyển Ghoul (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28672.720703125, 14889.1279296875, 454.5961608886719))
   end)
   
-  Race:Button("Teleport Human Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Dịch chuyển cánh cửa con người (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(29237.294921875, 14889.4267578125, -206.94955444335938))
   end)
   
-  Race:Button("Teleport Mink Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Dịch chuyển cửa chồn (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(29020.66015625, 14889.4267578125, -379.2682800292969))
   end)
   
-  Race:Button("Teleport Sky Door (Must Be in Temple Of Time!)",function()
+  Race:Button("Cổng trời dịch chuyển (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28967.408203125, 14918.0751953125, 234.31198120117188))
   end)
   
   Race:Line()
   
-  Race:Button("Teleport To Safe Zone When Pvp (Must Be in Temple Of Time!)",function()
+  Race:Button("Dịch Chuyển Đến Vùng An Toàn Khi Pvp(Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28273.0859375, 14896.5078125, 157.42063903808594))
   end)
   
-  Race:Button("Teleport Pvp Zone (Must Be in Temple Of Time!)",function()
+  Race:Button("Khu Pvp dịch chuyển (Phải ở trong Temple Of Time!)",function()
   topos(CFrame.new(28766.681640625, 14967.1455078125, -164.13290405273438))
   end)
   end
@@ -10728,9 +10728,9 @@ if World2 then
   game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,3)
  end)
  
- Misc:Seperator(" Joins ")
+ Misc:Seperator(" tham gia ")
  
- Misc:Button("Join Pirates Team",function()
+ Misc:Button("Tham gia đội cướp biển",function()
  		local args = {
 			[1] = "SetTeam",
 			[2] = "Pirates"
@@ -10743,7 +10743,7 @@ if World2 then
 end)
  
 
-Misc:Button("Join Marines Team",function()
+Misc:Button("Tham gia đội thủy quân lục chiến",function()
  local args = {
 			[1] = "SetTeam",
 			[2] = "Marines"
@@ -10756,16 +10756,16 @@ Misc:Button("Join Marines Team",function()
 end)
 
 
-Misc:Button("Rejoin",function()
+Misc:Button("tham gia lại",function()
  local ts = game:GetService("TeleportService")
 		local p = game:GetService("Players").LocalPlayer
 		ts:Teleport(game.PlaceId, p)
 end)
 
-Misc:Button("Sever Hop",function()
+Misc:Button("đổi máy chủ",function()
  hop()
 end)
-    Misc:Button("Hop To Lower Player",function()
+    Misc:Button("đổi máy chủ đến hạ thủ",function()
         local maxplayers, gamelink, goodserver, data_table = math.huge, "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
 		if not _G.FailedServerID then _G.FailedServerID = {} end
 
@@ -10804,9 +10804,9 @@ end)
 		game:GetService"TeleportService":TeleportToPlaceInstance(game.PlaceId, goodserver)
     end)
 
-Misc:Seperator(" Open Menu ")
+Misc:Seperator(" Mở thực đơn ")
 
-Misc:Button("Inventory",function()
+Misc:Button("Hàng tồn kho",function()
  game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("getInventoryWeapons")
 		game.Players.localPlayer.PlayerGui.Main.Inventory.Visible = true
 end)
