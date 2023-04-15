@@ -186,7 +186,7 @@ Logo.Image = "rbxassetid://12986011583"
 	Hub.Position = UDim2.new(0, 150, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = "Shop Bán Robux Uy tín Storerobux.vn"
+	Hub.Text = "Shop Acc Storerobux.vn"
 	Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Hub.TextSize = 14.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -253,7 +253,7 @@ Logo.Image = "rbxassetid://12986011583"
 	ver1.TextXAlignment = Enum.TextXAlignment.Left
     task.spawn(function()
 	  while wait() do
-	   ver1.Text = "[Time] : "..os.date("%H")..":"..os.date("%M")..":"..os.date("%S")
+	   ver1.Text = "[S] : "..os.date("%H")..":"..os.date("%M")..":"..os.date("%S")
 	end
 end)
 
