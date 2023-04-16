@@ -2198,9 +2198,9 @@ if _G.FastAttack then
 pcall(function()
 CameraShakerR:Stop()
 CombatFramework.activeController.attacking = false
-CombatFramework.activeController.timeToNextAttack = 100
-CombatFramework.activeController.increment = 10
-CombatFramework.activeController.hitboxMagnitude = 500
+CombatFramework.activeController.timeToNextAttack = 400
+CombatFramework.activeController.increment = 30
+CombatFramework.activeController.hitboxMagnitude = 800
 CombatFramework.activeController.blocking = false
 CombatFramework.activeController.timeToNextBlock = 0
 CombatFramework.activeController.focusStart = 0
