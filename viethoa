@@ -303,7 +303,7 @@ getkey.TextColor3 = Color3.fromRGB(255, 255, 255)
 getkey.TextSize = 14.000
 getkey.MouseButton1Click:Connect(function()
 setclipboard("https://subhachne.blogspot.com/2023/04/hay-oc-ki-2-dong-ben-duoi-e-lay-key-nhe.html")
-            DiscordLib:Notification("Key System" , "Key Copied to Your Clipboard\n& Paste on Your Browser" , 3)
+            DiscordLib:Notification("Trang Mở khóa" , "Đã được sao chép hãy mở trình duyệt rồi lẤY  mã" , 3)
 end)
 
 
@@ -320,13 +320,13 @@ confirm.Text = "UNLOCK"
 confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
 confirm.TextSize = 14.000
 confirm.MouseButton1Click:Connect(function()
-DiscordLib:Notification("Key System" , "Key Check, Executing Script..." , 3)
+DiscordLib:Notification("Key System" , "Tích cực, Quay tay vận may..." , 3)
 if keyhere.Text == "2a6054300e30" then
 wait(3)
 ZENHUB:Destroy()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/viethoa2"))()
 else
-DiscordLib:Notification("Key System" , "Key Wrong Try Again" , 3)
+DiscordLib:Notification("Key System" , "Key Sai lấy lại đi cha Nội" , 3)
 end
 end)
 
