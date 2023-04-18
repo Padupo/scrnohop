@@ -2869,8 +2869,8 @@ spawn(function()
                 pcall(function()
                     CameraShaker:Stop()
                     y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
-                    y.activeController.timeToNextAttack = 0
-                    y.activeController.hitboxMagnitude = 9999
+                    y.activeController.timeToNextAttack = 100
+                    y.activeController.hitboxMagnitude = 3
                     y.activeController.active = false
                     y.activeController.timeToNextBlock = 0
                     y.activeController.focusStart = 0
