@@ -1,46 +1,47 @@
-if game.CoreGui:FindFirstChild("SOMEXHUBMODILE") then
-    game.CoreGui:FindFirstChild("SOMEXHUBMODILE"):Destroy()
-end
+  ThunderScreen.Name = "ThunderScreen"
+        ThunderScreen.Parent = game.CoreGui
+        ThunderScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-local SOMEXHUBMODILE = Instance.new("ScreenGui")
-local MODILEGUISOMEXHUB = Instance.new("TextButton")
-local MODILEGUISOMEXHUBHUI = Instance.new("UICorner")
-local MODILEMAGE = Instance.new("ImageLabel")
-
-SOMEXHUBMODILE.Name = "SOMEXHUBMODILE"
-        SOMEXHUBMODILE.Parent = game.CoreGui
-        SOMEXHUBMODILE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-        MODILEGUISOMEXHUB.Name = "MODILEGUISOMEXHUB"
-        MODILEGUISOMEXHUB.Parent = SOMEXHUBMODILE
-        MODILEGUISOMEXHUB.BackgroundColor3 = Color3.fromRGB(30,20,20)
-        MODILEGUISOMEXHUB.BorderSizePixel = 0
-        MODILEGUISOMEXHUB.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-        MODILEGUISOMEXHUB.Size = UDim2.new(0, 50, 0, 50)
-        MODILEGUISOMEXHUB.Font = Enum.Font.SourceSans
-        MODILEGUISOMEXHUB.Text = "X"
-        MODILEGUISOMEXHUB.TextColor3 = Color3.fromRGB(255, 255, 255)
-        MODILEGUISOMEXHUB.TextSize = 14.000
-        MODILEGUISOMEXHUB.Draggable = true
-        MODILEGUISOMEXHUB.MouseButton1Click:Connect(function()
-        game.CoreGui:FindFirstChild("SOMEXHUB").Enabled = not game.CoreGui:FindFirstChild("SOMEXHUB").Enabled
+        ThunderToggleUI.Name = "ThunderToggleUI"
+        ThunderToggleUI.Parent = ThunderScreen
+        ThunderToggleUI.BackgroundColor3 = Color3.fromRGB(31,31,31)
+        ThunderToggleUI.BorderSizePixel = 0
+        ThunderToggleUI.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
+        ThunderToggleUI.Size = UDim2.new(0, 50, 0, 50)
+        ThunderToggleUI.Font = Enum.Font.SourceSans
+        ThunderToggleUI.Text = ""
+        ThunderToggleUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+        ThunderToggleUI.TextSize = 14.000
+        ThunderToggleUI.Draggable = true
+        ThunderToggleUI.MouseButton1Click:Connect(function()
+        game:GetService("VirtualInputManager"):SendKeyEvent(true,305,false,game)
+        game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
         end)
-        do
-        if game:GetService("CoreGui"):FindFirstChild("SOMEXHUB") then
-        end
-        end
 
-        MODILEGUISOMEXHUBHUI.Name = "MODILEGUISOMEXHUBHUI"
-        MODILEGUISOMEXHUBHUI.Parent = MODILEGUISOMEXHUB
+        ThunderCornerUI.Name = "ThunderCornerUI"
+        ThunderCornerUI.Parent = ThunderToggleUI
 
-        MODILEMAGE.Name = "MODILEMAGE"
-        MODILEMAGE.Parent = MODILEGUISOMEXHUB
-        MODILEMAGE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        MODILEMAGE.BackgroundTransparency = 1.000
-        MODILEMAGE.BorderSizePixel = 0
-        MODILEMAGE.Position = UDim2.new(0, 3, 0, 2)
-        MODILEMAGE.Size = UDim2.new(0, 45, 0, 45)
-        MODILEMAGE.Image = "rbxassetid://9614132122"
+        ThunderImageUI.Name = "MODILEMAGE"
+        ThunderImageUI.Parent = ThunderToggleUI
+        ThunderImageUI.BackgroundColor3 = Color3.fromRGB(192,192,192)
+        ThunderImageUI.BackgroundTransparency = 1.000
+        ThunderImageUI.BorderSizePixel = 0
+        ThunderImageUI.Position = UDim2.new(0.0, 0, 0.0, 0)
+        ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
+        ThunderImageUI.Image = "http://www.roblox.com/asset/?id=12986011583"
+
+local SOMEXHUB = {}
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local RunService = game:GetService("RunService")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+local HttpService = game:GetService("HttpService")
+local pfp
+local user
+local tag
+local userinfo = {}
+
 
 do local GUI = game.CoreGui:FindFirstChild("SOMEXHUB");if GUI then GUI:Destroy();end;if _G.Color == nil then
        _G.Color = Color3.fromRGB(255,0,0)
