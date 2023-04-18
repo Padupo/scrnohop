@@ -30,9 +30,9 @@ SOMEXHUBMODILE.Name = "SOMEXHUBMODILE"
         end
         end
 
-        MODILEGUISOMEXHUBHUI.Name = "MODILEGUISOMEXHUBHUI"
-        MODILEGUISOMEXHUBHUI.Parent = MODILEGUISOMEXHUB
-	
+       ThunderCornerUI.Name = "ThunderCornerUI"
+        ThunderCornerUI.Parent = ThunderToggleUI
+
         ThunderImageUI.Name = "MODILEMAGE"
         ThunderImageUI.Parent = ThunderToggleUI
         ThunderImageUI.BackgroundColor3 = Color3.fromRGB(192,192,192)
