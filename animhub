@@ -496,7 +496,7 @@ local LogoToggle = Instance.new("ImageLabel")
 	LogoToggle.BackgroundTransparency = 1.000
 	LogoToggle.Position = UDim2.new(0, 7, 0, 2)
 	LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(9614132122)
+	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(9614132333)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
