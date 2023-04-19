@@ -206,7 +206,7 @@ UserImage.Parent = User
 UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
 UserImage.Position = UDim2.new(0, 10, 0, 9)
 UserImage.Size = UDim2.new(0, 25, 0, 25)
-UserImage.Image = "http://www.roblox.com/asset/?id="..tostring(9614132122)"
+UserImage.Image = "http://www.roblox.com/asset/?id="..tostring(9614132122)
 
 local UserImageCorner = Instance.new("UICorner")
 UserImageCorner.CornerRadius = UDim.new(0, 100)
