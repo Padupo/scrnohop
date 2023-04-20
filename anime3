@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+local Window = OrionLib:MakeWindow({IntroText = "1Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
 -- Tabs
 local MainTab = Window:MakeTab({
@@ -27,7 +27,7 @@ CreditsTab:AddParagraph("Credits to","NooBed And The Other Creator Of The Hub")
 coroutine.resume(NotificationCoroutine)
 
 
-Misc:AddToggle("Remove Fog",RemoveFog,function(value)
+MainTab:AddToggle("Remove Fog",RemoveFog,function(value)
 RemoveFog = value
 if not RemoveFog then return end
 while RemoveFog do wait()
@@ -38,60 +38,60 @@ end
 end
 end)
 
-Misc:AddButton("Unlock FPS",function()
+MainTab:AddButton("Unlock FPS",function()
 setfpscap(100)
 end)
 
-Misc:AddSeperator("ESP")
+MainTab:AddSeperator("ESP")
 
-Misc:AddToggle("ESP Player",false,function(value)
+MainTab:AddToggle("ESP Player",false,function(value)
 ESPPlayer = value
 while ESPPlayer do wait()
 UpdateEspPlayer()
 end
 end)
 
-Misc:AddToggle("ESP Chest",false,function(value)
+MainTab:AddToggle("ESP Chest",false,function(value)
 ChestESP = value
 while ChestESP do wait()
 UpdateChestEsp()
 end
 end)
 
-Misc:AddToggle("ESP Fruit",false,function(value)
+MainTab:AddToggle("ESP Fruit",false,function(value)
 DevilFruitESP = value
 while DevilFruitESP do wait()
 UpdateBfEsp()
 end
 end)
 
-Misc:AddToggle("ESP Flower",false,function(value)
+MainTab:AddToggle("ESP Flower",false,function(value)
 FlowerESP = value
 while FlowerESP do wait()
 UpdateFlowerEsp()
 end
 end)
 
-Misc:AddToggle("ESP Island",IslandESP,function(value)
+MainTab:AddToggle("ESP Island",IslandESP,function(value)
 IslandESP = value
 while IslandESP do wait()
 UpdateIslandESP()
 end
 end)
 
-Misc:AddSeperator("Abilities")
+MainTab:AddSeperator("Abilities")
 
-Misc:AddToggle("Dodge No Cooldown",false,function(value)
+MainTab:AddToggle("Dodge No Cooldown",false,function(value)
 nododgecool = value
 NoDodgeCool()
 end)
 
-Misc:AddToggle("Infinite Energy",false,function(value)
+MainTab:AddToggle("Infinite Energy",false,function(value)
 InfiniteEnergy = value
 originalstam = LocalPlayer.Character.Energy.Value
 end)
 
-Misc:AddToggle("Auto Active Race",_G.AutoAgility,function(value)
+MainTab:AddToggle("Auto Active Race",_G.AutoAgility,function(value)
 _G.AutoAgility = value
 end)
 
