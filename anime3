@@ -1,3 +1,5 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")() local Win1 = DiscordLib:Window("NooBed Hub BETA") -- Title/Name local Tab1 = Win1:Server("Gui/Hub Community", "") -- Server/Tab 
+
 --------------------------------------------------------------------
 if game.PlaceId == 2753915549 then
     World1 = true
