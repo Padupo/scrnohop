@@ -155,7 +155,7 @@ function Update:Window(text,logo,keybind)
 	Hub.Font = Enum.Font.GothamSemibold
 	Hub.Text = " HUB | BF MOBILE OR PC"
 	Hub.TextColor3 = _G.Color
-	Hub.TextSize = 19.000
+	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 	
 	local Hubb = Instance.new("TextLabel")
@@ -177,7 +177,7 @@ function Update:Window(text,logo,keybind)
 	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.BackgroundTransparency = 1.000
 	Tab.Position = UDim2.new(0, 5, 0, 30)
-	Tab.Size = UDim2.new(0, 250, 0, 350)
+	Tab.Size = UDim2.new(0, 250, 0, 150)
 
 local LogoHub = Instance.new("ImageLabel")
 	LogoHub.Name = "LogoHub"
@@ -186,7 +186,7 @@ local LogoHub = Instance.new("ImageLabel")
 	LogoHub.BackgroundTransparency = 1.000
 	LogoHub.Position = UDim2.new(0, 0, 0, 1)
 	LogoHub.Size = UDim2.new(0, 150, 0, 150)
-	LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(11196588443)
+	LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(2)
 
 	local ScrollTab = Instance.new("ScrollingFrame")
 	ScrollTab.Name = "ScrollTab"
