@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "21Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+local Window = OrionLib:MakeWindow({IntroText = "231Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
 -- Tabs
 local MainTab = Window:MakeTab({
@@ -15,6 +15,13 @@ local GamesTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+MainTab:AddButton({
+	Name = "autofram",
+	Callback = function()
+  		loadstring(game:HttpGet('https://pastebin.com/raw/SLPrghST'))()
+  	end    
+})
+
 
 local CreditsTab = Window:MakeTab({
 	Name = "Credits",
