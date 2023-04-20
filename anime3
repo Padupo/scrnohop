@@ -26,6 +26,91 @@ CreditsTab:AddParagraph("Credits to","NooBed And The Other Creator Of The Hub")
 
 coroutine.resume(NotificationCoroutine)
 
+
+Misc:AddToggle("Remove Fog",RemoveFog,function(value)
+RemoveFog = value
+if not RemoveFog then return end
+while RemoveFog do wait()
+game.Lighting.FogEnd = 9e9
+if not RemoveFog then
+game.Lighting.FogEnd = 2500
+end
+end
+end)
+
+Misc:AddButton("Unlock FPS",function()
+setfpscap(100)
+end)
+
+Misc:AddSeperator("ESP")
+
+Misc:AddToggle("ESP Player",false,function(value)
+ESPPlayer = value
+while ESPPlayer do wait()
+UpdateEspPlayer()
+end
+end)
+
+Misc:AddToggle("ESP Chest",false,function(value)
+ChestESP = value
+while ChestESP do wait()
+UpdateChestEsp()
+end
+end)
+
+Misc:AddToggle("ESP Fruit",false,function(value)
+DevilFruitESP = value
+while DevilFruitESP do wait()
+UpdateBfEsp()
+end
+end)
+
+Misc:AddToggle("ESP Flower",false,function(value)
+FlowerESP = value
+while FlowerESP do wait()
+UpdateFlowerEsp()
+end
+end)
+
+Misc:AddToggle("ESP Island",IslandESP,function(value)
+IslandESP = value
+while IslandESP do wait()
+UpdateIslandESP()
+end
+end)
+
+Misc:AddSeperator("Abilities")
+
+Misc:AddToggle("Dodge No Cooldown",false,function(value)
+nododgecool = value
+NoDodgeCool()
+end)
+
+Misc:AddToggle("Infinite Energy",false,function(value)
+InfiniteEnergy = value
+originalstam = LocalPlayer.Character.Energy.Value
+end)
+
+Misc:AddToggle("Auto Active Race",_G.AutoAgility,function(value)
+_G.AutoAgility = value
+end)
+
+spawn(function()
+pcall(function()
+while wait() do
+if _G.AutoAgility then
+game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("ActivateAbility")
+end
+end
+end)
+end)
+
+Misc:AddToggle("Infinite Ability",false,function(value)
+InfAbility = value
+if value == false then
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
+end
+end)
 OrionLib:Init()
 
 task.wait(2)
