@@ -437,7 +437,7 @@ local LogoHub = Instance.new("ImageLabel")
 			Toggle.Name = "Toggle"
 			Toggle.Parent = MainFramePage
 			Toggle.BackgroundColor3 = _G.Color
-			Toggle.Size = UDim2.new(0, 470, 0, 31)
+			Toggle.Size = UDim2.new(0, 470, 0, 61)
 
 			UICorner.CornerRadius = UDim.new(0, 5)
 			UICorner.Parent = Toggle
@@ -496,7 +496,7 @@ local LogoToggle = Instance.new("ImageLabel")
 	LogoToggle.BackgroundTransparency = 1.000
 	LogoToggle.Position = UDim2.new(0, 7, 0, 2)
 	LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(11196588443)
+	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(232321)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
