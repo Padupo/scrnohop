@@ -1,12 +1,4 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "54231Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
-if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
-_G.Color = Color3.fromRGB(255,0,0)
-if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
-repeat wait() until game:GetService("Players")
-
-if not game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart") end
-
-wait(1)
 -- Tabs
