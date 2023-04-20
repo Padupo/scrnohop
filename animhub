@@ -194,7 +194,7 @@ local LogoHub = Instance.new("ImageLabel")
 	ScrollTab.Active = true
 	ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ScrollTab.BackgroundTransparency = 1.000
-	ScrollTab.Size = UDim2.new(0, 150, 0, 365)
+	ScrollTab.Size = UDim2.new(0, 150, 0, 165)
 	ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
 	ScrollTab.ScrollBarThickness = 0
 
@@ -496,7 +496,7 @@ local LogoToggle = Instance.new("ImageLabel")
 	LogoToggle.BackgroundTransparency = 1.000
 	LogoToggle.Position = UDim2.new(0, 7, 0, 2)
 	LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(232321)
+	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(121)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
@@ -667,7 +667,7 @@ local postog12 = Instance.new("UIStroke")
  ImageLabel.BorderSizePixel = 0
  ImageLabel.Position = UDim2.new(-0.018, 0,-0.252, 0)
  ImageLabel.Size = UDim2.new(0, 45,0, 45)
- ImageLabel.Image = "rbxassetid://12986011583"
+ ImageLabel.Image = "rbxassetid://12986011522"
  ImageLabel.ImageColor3 = Color3.fromRGB(224,224,224)
  
  Space.Name = "Space"
@@ -701,7 +701,7 @@ local postog12 = Instance.new("UIStroke")
  ImageButton.Position = UDim2.new(0, 340, 0, 4)
  ImageButton.Size = UDim2.new(0, 23, 0, 23)
  ImageButton.ZIndex = 2
- ImageButton.Image = "rbxassetid://3926311105"
+ ImageButton.Image = "rbxassetid://3926311133"
  ImageButton.ImageColor3 = Color3.fromRGB(224,224,224)
  ImageButton.ImageRectOffset = Vector2.new(940, 784)
  ImageButton.ImageRectSize = Vector2.new(48, 48)
