@@ -125,13 +125,13 @@ function Update:Window(text,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 656, 0, 350),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 656, 0, 650),"Out","Quad",0.4,true)
 	
 	local Top = Instance.new("Frame")
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-	Top.Size = UDim2.new(0, 656, 0, 27)
+	Top.Size = UDim2.new(0, 656, 0, 47)
 	
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
@@ -155,7 +155,7 @@ function Update:Window(text,logo,keybind)
 	Hub.Font = Enum.Font.GothamSemibold
 	Hub.Text = " HUB | BF MOBILE OR PC"
 	Hub.TextColor3 = _G.Color
-	Hub.TextSize = 17.000
+	Hub.TextSize = 19.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 	
 	local Hubb = Instance.new("TextLabel")
@@ -177,7 +177,7 @@ function Update:Window(text,logo,keybind)
 	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.BackgroundTransparency = 1.000
 	Tab.Position = UDim2.new(0, 5, 0, 30)
-	Tab.Size = UDim2.new(0, 150, 0, 350)
+	Tab.Size = UDim2.new(0, 250, 0, 350)
 
 local LogoHub = Instance.new("ImageLabel")
 	LogoHub.Name = "LogoHub"
@@ -186,7 +186,7 @@ local LogoHub = Instance.new("ImageLabel")
 	LogoHub.BackgroundTransparency = 1.000
 	LogoHub.Position = UDim2.new(0, 0, 0, 1)
 	LogoHub.Size = UDim2.new(0, 150, 0, 150)
-	LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(2626817801)
+	LogoHub.Image = "http://www.roblox.com/asset/?id="..tostring(11196588443)
 
 	local ScrollTab = Instance.new("ScrollingFrame")
 	ScrollTab.Name = "ScrollTab"
@@ -215,7 +215,7 @@ local LogoHub = Instance.new("ImageLabel")
 	Page.Parent = Main
 	Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Page.Position = UDim2.new(0.245426834, 0, 0.075000003, 0)
-	Page.Size = UDim2.new(0, 490, 0, 365)
+	Page.Size = UDim2.new(0, 490, 0, 565)
 
 	local MainPage = Instance.new("Frame")
 	MainPage.Name = "MainPage"
@@ -366,7 +366,7 @@ local LogoHub = Instance.new("ImageLabel")
 			Button.Name = "Button"
 			Button.Parent = MainFramePage
 			Button.BackgroundColor3 = _G.Color
-			Button.Size = UDim2.new(0, 470, 0, 31)
+			Button.Size = UDim2.new(0, 470, 0, 61)
 			
 			UICorner.CornerRadius = UDim.new(0, 5)
 			UICorner.Parent = Button
@@ -482,7 +482,7 @@ local tggc = Instance.new("TextLabel")
 	tggc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	tggc.BackgroundTransparency = 1.000
 	tggc.Position = UDim2.new(0, 40, 0, 3)
-	tggc.Size = UDim2.new(0, 81, 0, 27)
+	tggc.Size = UDim2.new(0, 81, 0, 57)
 	tggc.Font = Enum.Font.GothamSemibold
     tggc.Text = "|"
 	tggc.TextColor3 = _G.Color
@@ -496,7 +496,7 @@ local LogoToggle = Instance.new("ImageLabel")
 	LogoToggle.BackgroundTransparency = 1.000
 	LogoToggle.Position = UDim2.new(0, 7, 0, 2)
 	LogoToggle.Size = UDim2.new(0, 26, 0, 26)
-	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(9614132213)
+	LogoToggle.Image = "http://www.roblox.com/asset/?id="..tostring(11196588443)
 
 			Circle.Name = "Circle"
 			Circle.Parent = ToggleImage
