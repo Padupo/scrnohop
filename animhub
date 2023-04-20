@@ -131,7 +131,7 @@ function Update:Window(text,logo,keybind)
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-	Top.Size = UDim2.new(0, 656, 0, 107)
+	Top.Size = UDim2.new(0, 656, 0, 70)
 	
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
@@ -177,7 +177,7 @@ function Update:Window(text,logo,keybind)
 	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.BackgroundTransparency = 1.000
 	Tab.Position = UDim2.new(0, 5, 0, 30)
-	Tab.Size = UDim2.new(0, 250, 0, 350)
+	Tab.Size = UDim2.new(0, 250, 0, 250)
 
 local LogoHub = Instance.new("ImageLabel")
 	LogoHub.Name = "LogoHub"
@@ -223,7 +223,7 @@ local LogoHub = Instance.new("ImageLabel")
 	MainPage.ClipsDescendants = true
 	MainPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainPage.BackgroundTransparency = 1.000
-	MainPage.Size = UDim2.new(0, 490, 0, 365)
+	MainPage.Size = UDim2.new(0, 390, 0, 365)
 
 	local PageList = Instance.new("Folder")
 	PageList.Name = "PageList"
@@ -289,7 +289,7 @@ local LogoHub = Instance.new("ImageLabel")
 		MainFramePage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		MainFramePage.BackgroundTransparency = 1.000
 		MainFramePage.BorderSizePixel = 0
-		MainFramePage.Size = UDim2.new(0, 490, 0, 365)
+		MainFramePage.Size = UDim2.new(0, 390, 0, 365)
 		MainFramePage.CanvasSize = UDim2.new(0, 0, 0, 0)
 		MainFramePage.ScrollBarThickness = 0
 		
@@ -366,7 +366,7 @@ local LogoHub = Instance.new("ImageLabel")
 			Button.Name = "Button"
 			Button.Parent = MainFramePage
 			Button.BackgroundColor3 = _G.Color
-			Button.Size = UDim2.new(0, 470, 0, 101)
+			Button.Size = UDim2.new(0, 370, 0, 101)
 			
 			UICorner.CornerRadius = UDim.new(0, 5)
 			UICorner.Parent = Button
