@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "1Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+local Window = OrionLib:MakeWindow({IntroText = "21Dimemay",Name = "Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
 -- Tabs
 local MainTab = Window:MakeTab({
@@ -27,7 +27,7 @@ CreditsTab:AddParagraph("Credits to","NooBed And The Other Creator Of The Hub")
 coroutine.resume(NotificationCoroutine)
 
 
-MainTab:AddToggle("Remove Fog",RemoveFog,function(value)
+CreditsTab:AddToggle("Remove Fog",RemoveFog,function(value)
 RemoveFog = value
 if not RemoveFog then return end
 while RemoveFog do wait()
@@ -38,60 +38,60 @@ end
 end
 end)
 
-MainTab:AddButton("Unlock FPS",function()
+CreditsTab:AddButton("Unlock FPS",function()
 setfpscap(100)
 end)
 
-MainTab:AddSeperator("ESP")
+CreditsTab:AddSeperator("ESP")
 
-MainTab:AddToggle("ESP Player",false,function(value)
+CreditsTab:AddToggle("ESP Player",false,function(value)
 ESPPlayer = value
 while ESPPlayer do wait()
 UpdateEspPlayer()
 end
 end)
 
-MainTab:AddToggle("ESP Chest",false,function(value)
+CreditsTab:AddToggle("ESP Chest",false,function(value)
 ChestESP = value
 while ChestESP do wait()
 UpdateChestEsp()
 end
 end)
 
-MainTab:AddToggle("ESP Fruit",false,function(value)
+CreditsTab:AddToggle("ESP Fruit",false,function(value)
 DevilFruitESP = value
 while DevilFruitESP do wait()
 UpdateBfEsp()
 end
 end)
 
-MainTab:AddToggle("ESP Flower",false,function(value)
+CreditsTab:AddToggle("ESP Flower",false,function(value)
 FlowerESP = value
 while FlowerESP do wait()
 UpdateFlowerEsp()
 end
 end)
 
-MainTab:AddToggle("ESP Island",IslandESP,function(value)
+CreditsTab:AddToggle("ESP Island",IslandESP,function(value)
 IslandESP = value
 while IslandESP do wait()
 UpdateIslandESP()
 end
 end)
 
-MainTab:AddSeperator("Abilities")
+CreditsTab:AddSeperator("Abilities")
 
-MainTab:AddToggle("Dodge No Cooldown",false,function(value)
+CreditsTab:AddToggle("Dodge No Cooldown",false,function(value)
 nododgecool = value
 NoDodgeCool()
 end)
 
-MainTab:AddToggle("Infinite Energy",false,function(value)
+CreditsTab:AddToggle("Infinite Energy",false,function(value)
 InfiniteEnergy = value
 originalstam = LocalPlayer.Character.Energy.Value
 end)
 
-MainTab:AddToggle("Auto Active Race",_G.AutoAgility,function(value)
+Credits:AddToggle("1Auto Active Race",_G.AutoAgility,function(value)
 _G.AutoAgility = value
 end)
 
@@ -105,7 +105,7 @@ end
 end)
 end)
 
-Misc:AddToggle("Infinite Ability",false,function(value)
+CreditsTab:AddToggle("Infinite Ability",false,function(value)
 InfAbility = value
 if value == false then
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("Agility"):Destroy()
