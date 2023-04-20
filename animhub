@@ -131,7 +131,7 @@ function Update:Window(text,logo,keybind)
 	Top.Name = "Top"
 	Top.Parent = Main
 	Top.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-	Top.Size = UDim2.new(0, 656, 0, 47)
+	Top.Size = UDim2.new(0, 656, 0, 107)
 	
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
@@ -177,7 +177,7 @@ function Update:Window(text,logo,keybind)
 	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.BackgroundTransparency = 1.000
 	Tab.Position = UDim2.new(0, 5, 0, 30)
-	Tab.Size = UDim2.new(0, 250, 0, 250)
+	Tab.Size = UDim2.new(0, 250, 0, 350)
 
 local LogoHub = Instance.new("ImageLabel")
 	LogoHub.Name = "LogoHub"
@@ -366,7 +366,7 @@ local LogoHub = Instance.new("ImageLabel")
 			Button.Name = "Button"
 			Button.Parent = MainFramePage
 			Button.BackgroundColor3 = _G.Color
-			Button.Size = UDim2.new(0, 470, 0, 61)
+			Button.Size = UDim2.new(0, 470, 0, 101)
 			
 			UICorner.CornerRadius = UDim.new(0, 5)
 			UICorner.Parent = Button
