@@ -912,7 +912,7 @@ Seperator.Size = UDim2.new(0, 455, 0, 20)
 
 Sep1.Name = "Sep1"
 Sep1.Parent = Seperator
-Sep1.BackgroundColor3 = Color3.fromRGB(255,0,0)
+Sep1.BackgroundColor3 = Color3.fromRGB(0,0,255)
 Sep1.BorderSizePixel = 0
 Sep1.Position = UDim2.new(0, 0, 0, 10)
 Sep1.Size = UDim2.new(0, 150, 0, 1)
@@ -948,7 +948,7 @@ Line.Size = UDim2.new(0, 455, 0, 20)
 
 Linee.Name = "Linee"
 Linee.Parent = Line
-Linee.BackgroundColor3 = Color3.fromRGB(255,0,0)
+Linee.BackgroundColor3 = Color3.fromRGB(0,0,255)
 Linee.BorderSizePixel = 0
 Linee.Position = UDim2.new(0, 0, 0, 10)
 Linee.Size = UDim2.new(0, 455, 0, 1)
@@ -2112,7 +2112,7 @@ ScreenGui.Parent = game.CoreGui
 
 Toggle.Name = "Toggle"
 Toggle.Parent = ScreenGui
-Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BackgroundColor3 = Color3.fromRGB(255,255,255)
 Toggle.Position = UDim2.new(0.120833330, 0, 0.0952890819, 0)
 Toggle.Size = UDim2.new(0, 70, 0, 50)
 Toggle.Font = Enum.Font.Code
@@ -2127,7 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroscgaming/zeroscgaming/main/RDE.lib/Dark%20UI", true))()
 
-local Library = DarkraiX:Window("HOAPOYTV","Blox-Fruit","RightAlt",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("CCC HUB","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
 
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
@@ -2139,7 +2139,7 @@ local Dungeon = Library:AddTab("Cày Raid","7044284832")
 local DevilFruit = Library:AddTab("Trứng Dái","7044233235")
 local Shop = Library:AddTab("Cửa Hàng","6031265976")
 local Misc = Library:AddTab("Thiết Lập","6034509993")
-local fast = Library:AddTab("","")
+local fast = Library:AddTab("Chỉnh tốc độ","Bắn")
 --------------------------------------------------------------------
 Main:AddSeperator("111heyheycax")
 Main:AddSeperator("V1 Make")
