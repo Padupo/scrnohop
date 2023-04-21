@@ -2125,7 +2125,7 @@ game:GetService("VirtualInputManager"):SendKeyEvent(false,305,false,game)
 end)
 
 --------------------------------------------------------------------
-local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroscgaming/zeroscgaming/main/RDE.lib/Dark%20UI", true))()
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source", true))()
 
 local Library = DarkraiX:Window("CCC HUB","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
 
@@ -2139,7 +2139,7 @@ local Dungeon = Library:AddTab("Cày Raid","7044284832")
 local DevilFruit = Library:AddTab("Trứng Dái","7044233235")
 local Shop = Library:AddTab("Cửa Hàng","6031265976")
 local Misc = Library:AddTab("Thiết Lập","6034509993")
-local fast = Library:AddTab("Chỉnh tốc độ","Bắn")
+local fast = Library:AddTab("Chỉnh tốc độ Bắn","Bắn")
 --------------------------------------------------------------------
 Main:AddSeperator("111heyheycax")
 Main:AddSeperator("1111V1 Make")
