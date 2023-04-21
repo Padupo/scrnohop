@@ -6474,13 +6474,13 @@ a.Ambient = Color3.fromRGB(33, 33, 33)
 a.Brightness = 0.3
 c.Brightness = 0.176
 c.Contrast = 0.39
-c.TintColor = Color3.fromRGB(217, 145, 57)
+c.TintColor = Color3.fromRGB(0,0,255)
 game.Lighting.FogEnd = 999
 if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("PointLight") then
 local a2 = Instance.new("PointLight")
 a2.Parent = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
 a2.Range = 15
-a2.Color = Color3.fromRGB(217, 145, 57)
+a2.Color = Color3.fromRGB(0,0,255)
 end
 if not _G.RTXMode then
 a.Ambient = OldAmbient
