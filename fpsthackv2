@@ -2131,15 +2131,15 @@ local Library = DarkraiX:Window("HOAPOYTV","Blox-Fruit","RightAlt",Enum.KeyCode.
 
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
-local auto = Library:AddTab("Auto Item","6026568198")
-local Combat = Library:AddTab("Player","7251993295")
-local Stats = Library:AddTab("Stats","7040410130")
-local Teleport = Library:AddTab("Teleport Island","6035190846")
-local Dungeon = Library:AddTab("Raid","7044284832")
-local DevilFruit = Library:AddTab("Devil Fruit","7044233235")
-local Shop = Library:AddTab("Shop","6031265976")
-local Misc = Library:AddTab("Miscellaneous","6034509993")
-local fast = Library:AddTab("Setting & fast attack","Attack")
+local auto = Library:AddTab("Auto lấy Item","6026568198")
+local Combat = Library:AddTab("Người chơi","7251993295")
+local Stats = Library:AddTab("Tự Cộng Chỉ Số","7040410130")
+local Teleport = Library:AddTab("Dịch Chuyển","6035190846")
+local Dungeon = Library:AddTab("Cày Raid","7044284832")
+local DevilFruit = Library:AddTab("Trứng Dái","7044233235")
+local Shop = Library:AddTab("Cửa Hàng","6031265976")
+local Misc = Library:AddTab("Thiết Lập","6034509993")
+
 --------------------------------------------------------------------
 Main:AddSeperator("111heyheycax")
 Main:AddSeperator("V1 Make")
