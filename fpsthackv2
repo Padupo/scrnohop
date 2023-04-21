@@ -371,7 +371,7 @@ local Button = Instance.new("TextButton")
 
 Button.Name = "Button"
 Button.Parent = ScrollTab
-Button.BackgroundColor3 = Color3.fromRGB(50, 48, 59)
+Button.BackgroundColor3 = Color3.fromRGB(255,255,0)
 Button.BackgroundTransparency = 0.1
 Button.BorderSizePixel = 0
 Button.Size = UDim2.new(0, 455, 0, 30)
