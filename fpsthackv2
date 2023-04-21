@@ -1,5 +1,5 @@
 if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
-_G.Color = Color3.fromRGB(255,0,0)
+_G.Color = Color3.fromRGB(0,255,0)
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
 repeat wait() until game:GetService("Players")
@@ -91,7 +91,7 @@ local Main = Instance.new("Frame")
 Main.Name = "Main"
 Main.Parent = DoctorShiba
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
-Main.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
+Main.BackgroundColor3 = Color3.fromRGB(0,0,255)
 Main.BackgroundTransparency = 0.100
 Main.BorderSizePixel = 0
 Main.ClipsDescendants = true
@@ -117,7 +117,7 @@ Page.Size = UDim2.new(0, 125, 0, 350)
 local NameHub = Instance.new("TextLabel")
 NameHub.Name = "NameHub"
 NameHub.Parent = Page
-NameHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameHub.BackgroundColor3 = Color3.fromRGB(128,128,128)
 NameHub.BackgroundTransparency = 1.000
 NameHub.Position = UDim2.new(0.113333493, 0, 0, 0)
 NameHub.Size = UDim2.new(0, 110, 0, 20)
@@ -288,7 +288,7 @@ PageImage.Image = "rbxassetid://"..tostring(Image)
 local MainTab = Instance.new("Frame")
 MainTab.Name = "MainTab"
 MainTab.Parent = TabFolder
-MainTab.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
+MainTab.BackgroundColor3 = Color3.fromRGB(0,0,255)
 MainTab.BorderSizePixel = 0
 MainTab.Position = UDim2.new(0.208333328, 0, 0, 0)
 MainTab.Size = UDim2.new(0, 475, 0, 350)
@@ -337,7 +337,7 @@ end
 TweenService:Create(
 PageButton,
 TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-{TextColor3 = Color3.fromRGB(255,0,0)}
+{TextColor3 = Color3.fromRGB(0,255,0)}
 ):Play()
 end
 end)
@@ -346,7 +346,7 @@ if ff == false then
 TweenService:Create(
 PageButton,
 TweenInfo.new(0.3,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-{TextColor3 = Color3.fromRGB(255,0,0)}
+{TextColor3 = Color3.fromRGB(0,255,0)}
 ):Play()
 for i,v in next, TabFolder:GetChildren() do
 if v.Name == "MainTab" then
@@ -391,7 +391,7 @@ Button.MouseEnter:Connect(function()
 TweenService:Create(
 Button,
 TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-{TextColor3 = Color3.fromRGB(255,0,0)}
+{TextColor3 = Color3.fromRGB(0,255,0)}
 ):Play()
 end)
 
@@ -463,7 +463,7 @@ local ToggleImage2 = Instance.new("Frame")
 ToggleImage2.Name = "ToggleImage2"
 ToggleImage2.Parent = ToggleImage
 ToggleImage2.AnchorPoint = Vector2.new(0.5, 0.5)
-ToggleImage2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+ToggleImage2.BackgroundColor3 = Color3.fromRGB(0,255,0)
 ToggleImage2.Position = UDim2.new(0, 10, 0, 10)
 ToggleImage2.Visible = false
 
@@ -476,7 +476,7 @@ Toggle.MouseEnter:Connect(function()
 TweenService:Create(
 ToggleLabel,
 TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-{TextColor3 = Color3.fromRGB(255,0,0)}
+{TextColor3 = Color3.fromRGB(0,255,0)}
 ):Play()
 end)
 
@@ -541,7 +541,7 @@ TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 Textbox.Name = "Textbox"
 Textbox.Parent = Textboxx
-Textbox.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
+Textbox.BackgroundColor3 = Color3.fromRGB(0,0,255)
 Textbox.Position = UDim2.new(0, 310, 0, 5)
 Textbox.Size = UDim2.new(0, 140, 0, 20)
 Textbox.Font = Enum.Font.Gotham
@@ -656,7 +656,7 @@ DropButton2.MouseEnter:Connect(function()
 TweenService:Create(
 DropButton2,
 TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-{TextColor3 = Color3.fromRGB(255,0,0)}
+{TextColor3 = Color3.fromRGB(0,255,0)}
 ):Play()
 end)
 DropButton2.MouseLeave:Connect(function()
@@ -827,12 +827,12 @@ SliderButton.TextSize = 14.000
 
 Bar1.Name = "Bar1"
 Bar1.Parent = SliderButton
-Bar1.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
+Bar1.BackgroundColor3 = Color3.fromRGB(0,0,255)
 Bar1.Size = UDim2.new(0, 435, 0, 5)
 
 Bar.Name = "Bar"
 Bar.Parent = Bar1
-Bar.BackgroundColor3 = Color3.fromRGB(255,0,0)
+Bar.BackgroundColor3 = Color3.fromRGB(0,255,0)
 Bar.Size = UDim2.new(set/max, 0, 0, 5)
 
 UICorner_2.CornerRadius = UDim.new(0, 100)
@@ -930,7 +930,7 @@ SepLabel.TextSize = 11.000
 
 Sep2.Name = "Sep2"
 Sep2.Parent = Seperator
-Sep2.BackgroundColor3 = Color3.fromRGB(255,0,0)
+Sep2.BackgroundColor3 = Color3.fromRGB(0,255,0)
 Sep2.BorderSizePixel = 0
 Sep2.Position = UDim2.new(0, 305, 0, 10)
 Sep2.Size = UDim2.new(0, 150, 0, 1)
