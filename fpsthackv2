@@ -2114,9 +2114,9 @@ Toggle.Name = "Toggle"
 Toggle.Parent = ScreenGui
 Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.Position = UDim2.new(0.120833330, 0, 0.0952890819, 0)
-Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Size = UDim2.new(0, 70, 0, 50)
 Toggle.Font = Enum.Font.Code
-Toggle.Text = "F"
+Toggle.Text = "CCC"
 Toggle.TextColor3 = Color3.fromRGB(0,255,0)
 Toggle.TextScaled = true
 Toggle.MouseButton1Down:connect(function()
@@ -2139,7 +2139,7 @@ local Dungeon = Library:AddTab("Cày Raid","7044284832")
 local DevilFruit = Library:AddTab("Trứng Dái","7044233235")
 local Shop = Library:AddTab("Cửa Hàng","6031265976")
 local Misc = Library:AddTab("Thiết Lập","6034509993")
-local fast = Library:AddTab("Setting & fast attack","Attack")
+local fast = Library:AddTab("","")
 --------------------------------------------------------------------
 Main:AddSeperator("111heyheycax")
 Main:AddSeperator("V1 Make")
