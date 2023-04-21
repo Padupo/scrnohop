@@ -2141,7 +2141,7 @@ local Shop = Library:AddTab("Shop","6031265976")
 local Misc = Library:AddTab("Miscellaneous","6034509993")
 local fast = Library:AddTab("Setting & fast attack","Attack")
 --------------------------------------------------------------------
-Main:AddSeperator("YT:Tu Free Script - FTSXHUB - Freescript")
+Main:AddSeperator("heyheycax")
 Main:AddSeperator("V1 Make")
 
 Time = Main:AddLabel("Server Time")
@@ -2198,12 +2198,12 @@ if _G.FastAttack then
 pcall(function()
 CameraShakerR:Stop()
 CombatFramework.activeController.attacking = false
-CombatFramework.activeController.timeToNextAttack = 800
+CombatFramework.activeController.timeToNextAttack = 0
 CombatFramework.activeController.increment = 70
-CombatFramework.activeController.hitboxMagnitude = 900
+CombatFramework.activeController.hitboxMagnitude = 10000
 CombatFramework.activeController.blocking = false
-CombatFramework.activeController.timeToNextBlock = 0
-CombatFramework.activeController.focusStart = 0
+CombatFramework.activeController.timeToNextBlock = 100
+CombatFramework.activeController.focusStart = 200
 CombatFramework.activeController.humanoid.AutoRotate = true
 end)
 end
