@@ -2142,7 +2142,7 @@ local Misc = Library:AddTab("Thiết Lập","6034509993")
 local fast = Library:AddTab("Chỉnh tốc độ","Bắn")
 --------------------------------------------------------------------
 Main:AddSeperator("111heyheycax")
-Main:AddSeperator("V1 Make")
+Main:AddSeperator("1111V1 Make")
 
 Time = Main:AddLabel("Server Time")
 
