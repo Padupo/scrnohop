@@ -2127,7 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/uiv2", true))()
 
-local Library = DarkraiX:Window("CCC HUB","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("CCC HUB VIETSUB HOA POY TV","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
 local auto = Library:AddTab("Auto lấy Item","6026568198")
