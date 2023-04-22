@@ -2198,12 +2198,12 @@ if _G.FastAttack then
 pcall(function()
 CameraShakerR:Stop()
 CombatFramework.activeController.attacking = false
-CombatFramework.activeController.timeToNextAttack = 7000
-CombatFramework.activeController.increment = 70000
-CombatFramework.activeController.hitboxMagnitude = 10000
+CombatFramework.activeController.timeToNextAttack = 9999999
+CombatFramework.activeController.increment = 99999999
+CombatFramework.activeController.hitboxMagnitude = 9999999
 CombatFramework.activeController.blocking = false
-CombatFramework.activeController.timeToNextBlock = 70000
-CombatFramework.activeController.focusStart = 70000
+CombatFramework.activeController.timeToNextBlock = 9999999
+CombatFramework.activeController.focusStart = 99999999
 CombatFramework.activeController.humanoid.AutoRotate = true
 end)
 end
@@ -2211,7 +2211,7 @@ task.wait()
 end
 end)
 
-fast:AddToggle("Fast Attack 1",false,function(Fastz)
+fast:AddToggle("Fast Attack 11",false,function(Fastz)
 
 _G.FastAttack1 = Fastz
 
@@ -2226,12 +2226,12 @@ if _G.FastAttack1 then
 pcall(function()
 CameraShakerR:Stop()
 CombatFramework.activeController.attacking = false
-CombatFramework.activeController.timeToNextAttack = 0
-CombatFramework.activeController.increment = 4
-CombatFramework.activeController.hitboxMagnitude = 100
+CombatFramework.activeController.timeToNextAttack = 9999999999
+CombatFramework.activeController.increment = 9999999
+CombatFramework.activeController.hitboxMagnitude = 9999999
 CombatFramework.activeController.blocking = false
-CombatFramework.activeController.timeToNextBlock = 0
-CombatFramework.activeController.focusStart = 0
+CombatFramework.activeController.timeToNextBlock = 999999999
+CombatFramework.activeController.focusStart = 9999999999
 CombatFramework.activeController.humanoid.AutoRotate = true
 end)
 end
