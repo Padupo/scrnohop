@@ -2127,7 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/uiv2", true))()
 
-local Library = DarkraiX:Window("CCC HUB VIETSUB HOA POY TV","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window("CCC HUB","UPDATE 19  VIETSUB HOA POY TV","RightAlt",Enum.KeyCode.RightControl);
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
 local auto = Library:AddTab("Auto lấy Item","6026568198")
@@ -2143,6 +2143,7 @@ local fast = Library:AddTab("Chỉnh tốc độ Bắn","Bắn")
 Main:AddSeperator("CCC hub VIETSUB - HOA POY TV")
 Main:AddSeperator("Chú Ý Hack trong Sever Vip sẽ an toàn hơn")
 Main:AddSeperator("Chỉ Hack Trong 15 Phút Rồi Nghỉ 10p Hack Tiếp Nhé")
+Main:AddSeperator("Hãy đến Với Hòa Chim TO để có bản Việt Hóa")
 
 Time = Main:AddLabel("Thời Gian Đã Online")
 
