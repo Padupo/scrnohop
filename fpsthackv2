@@ -2141,7 +2141,7 @@ local Misc = Library:AddTab("Thiết Lập","6034509993")
 local fast = Library:AddTab("Chỉnh tốc độ Bắn","Bắn")
 --------------------------------------------------------------------
 Main:AddSeperator("CCC hub")
-Main:AddSeperator("Đã Bật Chống Ban Nhưng Chú Ý Hack trong Sever Vip sẽ an toàn hơn")
+Main:AddSeperator("Chú Ý Hack trong Sever Vip sẽ an toàn hơn")
 Main:AddSeperator("Chỉ Hack Trong 15 Phút Rồi Nghỉ 10p Hack Tiếp Nhé")
 
 Time = Main:AddLabel("Thời Gian Đã Online")
@@ -6496,7 +6496,7 @@ end
 end
 end)
 
-Misc:AddButton("FPS Boost",function()
+Misc:AddButton("FPS Boost",true,function()
 pcall(function()
 game:GetService("Lighting").FantasySky:Destroy()
 local g = game
