@@ -1,17 +1,23 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "1Project NooBlox Beta",Name = "2Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+local Window = OrionLib:MakeWindow({IntroText = "Hòa Poy Tv",Name = "Phiên Bản cày beli lấy Key râu Cặc", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
 -- Tabs
 local MainTab = Window:MakeTab({
-	Name = "4Project Hub",
+	Name = "Menu Hack",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 -- Button
+print("not yo :(") -- Script Executes When The Toggle/Switch Is Off! end)
 MainTab:AddButton({
 	Name = "Bật Auto Chest",
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
+  	end    
+})
+MainTab:AddButton({
+	Name = "Bật Săn Bounty",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))();
   	end    
 })
 
