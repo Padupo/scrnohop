@@ -9,14 +9,10 @@ local MainTab = Window:MakeTab({
 })
 
 -- Button
-CreditsTab:AddParagraph("đối với auto chest","sẽ tự đổi sever khi hết rương- cho phép dừng chest và bật lại")
-})
 MainTab:AddButton({
 	Name = "Bật Auto Chest",
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
   	end    
-})
-CreditsTab:AddParagraph("đối với auto 30m Bounty","hàng Chất lượng Cao Nhưng dùng ít thôi")
 })
 MainTab:AddButton({
 	Name = "Bật Săn Bounty",
@@ -25,6 +21,14 @@ MainTab:AddButton({
 })
 
 CreditsTab:AddParagraph("cax cax cax","cax 1 cax 2")
+
+local CreditsTab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+CreditsTab:AddParagraph("Chú ý","Qua Hòa Poy Tv ấn Like đi chứ")
 
 coroutine.resume(NotificationCoroutine)
 
