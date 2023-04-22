@@ -2226,12 +2226,12 @@ if _G.FastAttack1 then
 pcall(function()
 CameraShakerR:Stop()
 CombatFramework.activeController.attacking = false
-CombatFramework.activeController.timeToNextAttack = 9999999999
-CombatFramework.activeController.increment = 9999999
-CombatFramework.activeController.hitboxMagnitude = 9999999
+CombatFramework.activeController.timeToNextAttack = 0
+CombatFramework.activeController.increment = 100
+CombatFramework.activeController.hitboxMagnitude = 100
 CombatFramework.activeController.blocking = false
-CombatFramework.activeController.timeToNextBlock = 999999999
-CombatFramework.activeController.focusStart = 9999999999
+CombatFramework.activeController.timeToNextBlock = 0
+CombatFramework.activeController.focusStart = 1
 CombatFramework.activeController.humanoid.AutoRotate = true
 end)
 end
