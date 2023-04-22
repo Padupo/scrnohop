@@ -1,0 +1,24 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "1Project NooBlox Beta",Name = "2Project Nooblox", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+
+-- Tabs
+local MainTab = Window:MakeTab({
+	Name = "4Project Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+-- Button
+MainTab:AddButton({
+	Name = "Bật Auto Chest",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
+  	end    
+})
+
+CreditsTab:AddParagraph("cax cax cax","cax 1 cax 2")
+
+coroutine.resume(NotificationCoroutine)
+
+OrionLib:Init()
+
+task.wait(2)
