@@ -9,12 +9,13 @@ local MainTab = Window:MakeTab({
 })
 
 -- Button
-print("not yo :(") -- Script Executes When The Toggle/Switch Is Off! end)
+CreditsTab:AddParagraph("đối với auto chest","sẽ tự đổi sever khi hết rương- cho phép dừng chest và bật lại")
 MainTab:AddButton({
 	Name = "Bật Auto Chest",
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
   	end    
 })
+CreditsTab:AddParagraph("đối với auto 30m Bounty","hàng Chất lượng Cao Nhưng dùng ít thôi")
 MainTab:AddButton({
 	Name = "Bật Săn Bounty",
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))();
