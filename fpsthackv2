@@ -2127,7 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/uiv2", true))()
 
-local Library = DarkraiX:Window("CCC HUB","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
+local Library = DarkraiX:Window({IntroText = "Project NooBlox Beta1",Name = "Project Nooblox2", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox3"})
 
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
