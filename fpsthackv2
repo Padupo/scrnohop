@@ -2127,8 +2127,7 @@ end)
 --------------------------------------------------------------------
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/uiv2", true))()
 
-local Library = DarkraiX:Window({IntroText = "Project NooBlox Beta1",Name = "Project Nooblox2", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox3"})
-
+local Library = DarkraiX:Window("CCC HUB","UPDATE 19","RightAlt",Enum.KeyCode.RightControl);
 --------------------------------------------------------------------
 local Main = Library:AddTab("Menu Farm","6026568198")
 local auto = Library:AddTab("Auto lấy Item","6026568198")
@@ -2141,10 +2140,11 @@ local Shop = Library:AddTab("Cửa Hàng","6031265976")
 local Misc = Library:AddTab("Thiết Lập","6034509993")
 local fast = Library:AddTab("Chỉnh tốc độ Bắn","Bắn")
 --------------------------------------------------------------------
-Main:AddSeperator("ccc hub")
-Main:AddSeperator("On AntiBAn")
+Main:AddSeperator("CCC hub")
+Main:AddSeperator("Đã Bật Chống Ban Nhưng Chú Ý Hack trong Sever Vip sẽ an toàn hơn")
+Main:AddSeperator("Chỉ Hack Trong 15 Phút Rồi Nghỉ 10p Hack Tiếp Nhé")
 
-Time = Main:AddLabel("Server Time")
+Time = Main:AddLabel("Thời Gian Đã Online")
 
 function UpdateTime()
 local GameTime = math.floor(workspace.DistributedGameTime+0.5)
