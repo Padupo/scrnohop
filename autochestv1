@@ -1,14 +1,15 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Hòa Poy Tv",Name = "Phiên Bản cày beli lấy Key râu Cặc", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
+local Window = OrionLib:MakeWindow({IntroText = "Yotube Hòa Poy Tv",Name = "Hòa Poy Tv - Hack Cày beli + Lấy Key Râu Con Cặc", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
 -- Tabs
 local MainTab = Window:MakeTab({
-	Name = "Menu Hack",
+	Name = "Chức Năng",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 -- Button
+
 MainTab:AddButton({
 	Name = "Bật Auto Chest",
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
@@ -20,15 +21,13 @@ MainTab:AddButton({
   	end    
 })
 
-CreditsTab:AddParagraph("cax cax cax","cax 1 cax 2")
 
 local CreditsTab = Window:MakeTab({
-	Name = "Credits",
+	Name = "Sex 😏",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-CreditsTab:AddParagraph("Chú ý","Qua Hòa Poy Tv ấn Like đi chứ")
+CreditsTab:AddParagraph("Sao bạn lại bấm vào đây ,ở đây làm chó gì có sex đâu","haha")
 
 coroutine.resume(NotificationCoroutine)
 
