@@ -2405,7 +2405,7 @@ end
 AutoFarm:Toggle("Auto Cày Cấp", _G.AutoFarmLevel, function(vu)
     _G.AutoFarm = vu
 	if _G.AutoFarm and SelectToolWeapon == "" then
-		DiscordLib:Notification("AutoFarm","SelectWeapon First","Okay")
+		DiscordLib:Notification("Hòa Poy Tv","Chọn vũ khi đi cha nội","Okay")
 	else
 		Auto_Farm = vu
 		SelectMonster = ""
@@ -2540,11 +2540,11 @@ spawn(function()
 	end
 end)
 
-AutoFarm:Toggle("lắp ráp đồ", _G.AutoAccessory, function(Value)
+AutoFarm:Toggle("Chọn vũ khí", _G.AutoAccessory, function(Value)
 	AutoAccessories = Value 
 end)
 
-local SelectWeapon = AutoFarm:Dropdown("ldanh sách",Wapon,function(Value)
+local SelectWeapon = AutoFarm:Dropdown("làm mới danh sách",Wapon,function(Value)
     SelectToolWeapon = Value
     SelectToolWeaponOld = Value
 end)
@@ -5269,19 +5269,57 @@ function CheckLevel()
 			NameMon = "Posessed Mummy"
 			CFrameQ = CFrame.new(-9515.39551, 172.266037, 6078.89746, 0.0121199936, -9.78649624e-08, 0.999926567, 2.30358754e-08, 1, 9.75929382e-08, -0.999926567, 2.18513581e-08, 0.0121199936)
 			CFrameMon = CFrame.new(-9554.11035, 65.6141663, 6041.73584, -0.877069294, 5.33355795e-08, -0.480364174, 2.06420765e-08, 1, 7.33423562e-08, 0.480364174, 5.44105987e-08, -0.877069294)
-		elseif Lv >= 2075 or SelectMonster == "Peanut Scout [Lv. 2075]" then
-			Ms = "Peanut Scout [Lv. 2075]"
-			NameQuest = "NutsIslandQuest"
-			QuestLv = 1
-			NameMon = "Peanut Scout"
-			CFrameQ = CFrame.new(-2103.9375, 38.139019012451, -10192.702148438)
-			CFrameMon = CFrame.new(-2150.587890625, 122.49767303467, -10358.994140625)
-			
-		end
-	end
-end
-
-
+		elseif MyLevel == 2075 or MyLevel <= 2099 then
+                Mon = "Peanut Scout [Lv. 2075]"
+                LevelQuest = 1
+                NameQuest = "NutsIslandQuest"
+                NameMon = "Peanut Scout"
+                CFrameQuest = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            elseif MyLevel == 2100 or MyLevel <= 2124 then
+                Mon = "Peanut President [Lv. 2100]"
+                LevelQuest = 2
+                NameQuest = "NutsIslandQuest"
+                NameMon = "Peanut President"
+                CFrameQuest = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            elseif MyLevel == 2125 or MyLevel <= 2149 then
+                Mon = "Ice Cream Chef [Lv. 2125]"
+                LevelQuest = 1
+                NameQuest = "IceCreamIslandQuest"
+                NameMon = "Ice Cream Chef"
+                CFrameQuest = CFrame.new(-820.64825439453, 65.819526672363, -10965.795898438, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            elseif MyLevel == 2150 or MyLevel <= 2199 then
+                Mon = "Ice Cream Commander [Lv. 2150]"
+                LevelQuest = 2
+                NameQuest = "IceCreamIslandQuest"
+                NameMon = "Ice Cream Commander"
+                CFrameQuest = CFrame.new(-820.64825439453, 65.819526672363, -10965.795898438, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+            elseif MyLevel == 2200 or MyLevel <= 2224 then
+                Mon = "Cookie Crafter [Lv. 2200]"
+                LevelQuest = 1
+                NameQuest = "CakeQuest1"
+                NameMon = "Cookie Crafter"
+                CFrameQuest = CFrame.new(-2021.32007, 37.7982254, -12028.7295, 0.957576931, -8.80302053e-08, 0.288177818, 6.9301187e-08, 1, 7.51931211e-08, -0.288177818, -5.2032135e-08, 0.957576931)
+            elseif MyLevel == 2225 or MyLevel <= 2249 then
+                Mon = "Cake Guard [Lv. 2225]"
+                LevelQuest = 2
+                NameQuest = "CakeQuest1"
+                NameMon = "Cake Guard"
+                CFrameQuest = CFrame.new(-2021.32007, 37.7982254, -12028.7295, 0.957576931, -8.80302053e-08, 0.288177818, 6.9301187e-08, 1, 7.51931211e-08, -0.288177818, -5.2032135e-08, 0.957576931)
+            elseif MyLevel == 2250 or MyLevel <= 2274 then
+                Mon = "Baking Staff [Lv. 2250]"
+                LevelQuest = 1
+                NameQuest = "CakeQuest2"
+                NameMon = "Baking Staff"
+                CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
+            elseif MyLevel >= 2275 then
+                Mon = "Head Baker [Lv. 2275]"
+                LevelQuest = 2
+                NameQuest = "CakeQuest2"
+                NameMon = "Head Baker"
+                CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
+            end
+        end
+    end
 function EquipWeapon(ToolSe)
     if game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe) then
         local tool = game.Players.LocalPlayer.Backpack:FindFirstChild(ToolSe)
