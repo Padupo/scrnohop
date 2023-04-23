@@ -2351,7 +2351,8 @@ local win = DiscordLib:Window("Blox Fruits", _G.Color, _G.Toggle)
 local serv = win:Server("ACX HUB","")
 
 local AutoFarm = serv:Channel("Hệ Thống", "http://www.roblox.com/asset/?id=7040391851")
-DiscordLib:Notification("Đây là Bản Beta","Kênh Hòa Poy Tv","Cảm Ơn")
+DiscordLib:Notification("Đây là Bản Beta","Kênh Hòa Poy Tv","đã hiểu")
+DiscordLib:Notification("Vui lòng xem kĩ","Kênh Hòa Poy Tv để không bị ban","đã hiểu")
 
 Time = AutoFarm:Label("Thời gian đã Hoạt Động")
 
@@ -2544,7 +2545,7 @@ AutoFarm:Toggle("Chọn vũ khí", _G.AutoAccessory, function(Value)
 	AutoAccessories = Value 
 end)
 
-local SelectWeapon = AutoFarm:Dropdown("làm mới danh sách",Wapon,function(Value)
+local SelectWeapon = AutoFarm:Dropdown("Chọn Vũ khí Fram",Wapon,function(Value)
     SelectToolWeapon = Value
     SelectToolWeaponOld = Value
 end)
