@@ -288,7 +288,7 @@ TextLabel.Position = UDim2.new(0.518987358, 0, 0.0725925565, 0)
 TextLabel.Size = UDim2.new(0, 174, 0, 25)
 TextLabel.ZIndex = 5
 TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "Hãy Lấy Key Để Bật Anti BAN"
+TextLabel.Text = "Hack Tại Youtube - Hòa Poy Tv"
 TextLabel.TextColor3 = Color3.fromRGB(130, 130, 130)
 TextLabel.TextSize = 20.000
 
