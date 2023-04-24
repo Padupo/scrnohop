@@ -2351,8 +2351,9 @@ local win = DiscordLib:Window("Blox Fruits", _G.Color, _G.Toggle)
 local serv = win:Server("ACX HUB","")
 
 local AutoFarm = serv:Channel("Hệ Thống", "http://www.roblox.com/asset/?id=7040391851")
-DiscordLib:Notification("Đây là Bản Beta","Kênh Hòa Poy Tv","đã hiểu")
-DiscordLib:Notification("Vui lòng xem kĩ","Kênh Hòa Poy Tv để không bị ban","đã hiểu")
+DiscordLib:Notification("Vui lòng hoạt động","đủ ̀5 đến 10 phút rồi hẵng hack nếu không muốn bị quái ảo","Đọc kĩ đi rồi bấm")
+DiscordLib:Notification("Đây là Bản Beta UI","Các chức năng được làm để thử nghiệm không hoàn chỉnh","Đọc kĩ đi rồi bấm")
+DiscordLib:Notification("Vui lòng xem kĩ","Kênh Hòa Poy Tv Hướng dẫn dùng để không bị ban","Hiểu chứ")
 
 Time = AutoFarm:Label("Thời gian đã Hoạt Động")
 
