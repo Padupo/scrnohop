@@ -21,7 +21,7 @@ MainTab:AddButton({
   	end    
 })
 MainTab:AddButton({
-	Name = "Làm ơn xem kĩ các Video Hướng kênh Hòa Poy Tv",
+	Name = "Làm ơn xem kĩ các Video Hướng Dẫn Sài kênh Hòa Poy Tv",
 	Callback = function()  
   	end    
 })
@@ -36,7 +36,7 @@ MainTab:AddButton({
   	end    
 })
 local CreditsTab = Window:MakeTab({
-	Name = "Sex 😏",
+	Name = "Sex cax 😏",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
