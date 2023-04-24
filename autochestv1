@@ -11,32 +11,24 @@ local MainTab = Window:MakeTab({
 -- Button
 
 MainTab:AddButton({
-	Name = "Bật Auto Chest",
-	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
+	Name = "Nếu Bạn Muốn Có các Bản Hack Ngon Anti Ban",
+	Callback = function()   
   	end    
 })
 MainTab:AddButton({
-	Name = "Bật Săn Bounty",
-	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))();
+	Name = "Hãy Đăng Kí Kênh Yotube Hòa Poy Tv Nhé",
+	Callback = function()   
   	end    
 })
 MainTab:AddButton({
-	Name = "Làm ơn xem kĩ các Video Hướng Dẫn Sài kênh Hòa Poy Tv",
-	Callback = function()  
+	Name = "Bật Bản HACK",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/subautochest"))();
   	end    
 })
-MainTab:AddButton({
-	Name = "Tránh Việc đéo biết dùng nhé",
-	Callback = function()  
-  	end    
-})
-MainTab:AddButton({
-	Name = "ROBUXNEW.COM Có bán Ác Gohuman + cdk chỉ ̀50k",
-	Callback = function()  
-  	end    
-})
+
+
 local CreditsTab = Window:MakeTab({
-	Name = "Sex cax 😏",
+	Name = "Sex 😏",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
