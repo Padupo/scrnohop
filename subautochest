@@ -344,8 +344,9 @@ old.Text = "Lấy Thêm các bản Việt Hóa"
 old.TextColor3 = Color3.fromRGB(255, 255, 255)
 old.TextSize = 14.000
 old.MouseButton1Click:Connect(function()
-Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
-end    
+setclipboard("https://www.youtube.com/@hoapoytv")
+end)
+  
 
 
 UICorner_5.CornerRadius = UDim.new(0, 4)
