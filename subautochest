@@ -316,13 +316,10 @@ confirm.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 confirm.Position = UDim2.new(0.529113948, 0, 0.532407403, 0)
 confirm.Size = UDim2.new(0, 172, 0, 32)
 confirm.Font = Enum.Font.Gotham
-confirm.Text = "UNLOCK"
+confirm.Text = "UNLOCăK"
 confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
 confirm.TextSize = 14.000
 confirm.MouseButton1Click:Connect(function()
-DiscordLib:Notification("Key System" , "Đang đo, độ dài của Cặc..." , 3)
-if keyhere.Text == "1112w2a6054300e30-Youtube_HoaPoyTv" then
-wait(3)
 ZENHUB:Destroy()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/fpsvietsub2epkey"))()
 else
