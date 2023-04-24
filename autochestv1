@@ -20,8 +20,21 @@ MainTab:AddButton({
 	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))();
   	end    
 })
-
-
+MainTab:AddButton({
+	Name = "Làm ơn xem kĩ các Video Hướng kênh Hòa Poy Tv",
+	Callback = function()  
+  	end    
+})
+MainTab:AddButton({
+	Name = "Tránh Việc đéo biết dùng nhé",
+	Callback = function()  
+  	end    
+})
+MainTab:AddButton({
+	Name = "ROBUXNEW.COM Có bán Ác Gohuman + cdk chỉ ̀50k",
+	Callback = function()  
+  	end    
+})
 local CreditsTab = Window:MakeTab({
 	Name = "Sex 😏",
 	Icon = "rbxassetid://4483345998",
