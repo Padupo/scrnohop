@@ -1,40 +1,49 @@
--- Khai báo màu chính
-local mainColor = {255, 192, 203}
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "Yotube Hòa Poy Tv",Name = "Hòa Poy Tv - Hack Cày beli + Lấy Key Râu Con Cặc", HidePremium = false, SaveConfig = true, ConfigFolder = "ProjectBlox"})
 
--- Thiết lập khung menu
-local menuFrame = display.newRect(display.contentCenterX, display.contentCenterY, display.contentWidth * 0.8, display.contentHeight * 0.8)
-menuFrame:setFillColor(1, 1, 1)
+-- Tabs
+local MainTab = Window:MakeTab({
+	Name = "Chức Năng",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
--- Thiết lập menu
-local menu = display.newGroup()
-menu.x = display.contentCenterX
-menu.y = display.contentCenterY
+-- Button
 
--- Tạo các mục menu
-local menuItems = {
-"Trang chủ",
-"Sản phẩm",
-"Dịch vụ",
-"Giới thiệu",
-"Liên hệ"
-}
+MainTab:AddButton({
+	Name = "Bật Auto Chest",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
+  	end    
+})
+MainTab:AddButton({
+	Name = "Bật Săn Bounty",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))();
+  	end    
+})
+MainTab:AddButton({
+	Name = "Làm ơn xem kĩ các Video Hướng Dẫn Sài kênh Hòa Poy Tv",
+	Callback = function()  
+  	end    
+})
+MainTab:AddButton({
+	Name = "Tránh Việc đéo biết dùng nhé",
+	Callback = function()  
+  	end    
+})
+MainTab:AddButton({
+	Name = "ROBUXNEW.COM Có bán Ác Gohuman + cdk chỉ ̀50k",
+	Callback = function()  
+  	end    
+})
+local CreditsTab = Window:MakeTab({
+	Name = "Sex cax 😏",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+CreditsTab:AddParagraph("Sao bạn lại bấm vào đây ,ở đây làm chó gì có sex đâu","haha")
 
-local itemHeight = 50
+coroutine.resume(NotificationCoroutine)
 
-for i = 1, #menuItems do
-local item = display.newRect(0, 0, menuFrame.width, itemHeight)
-item:setFillColor(unpack(mainColor))
-item.y = (i - 1) * itemHeight - (itemHeight / 2 * (#menuItems - 1))
+OrionLib:Init()
 
-local itemText = display.newText(menuItems[i], 0, 0, native.systemFontBold, 24)
-itemText:setFillColor(1, 1, 1)
-itemText.x = item.x
-itemText.y = item.y
-
-menu:insert(item)
-menu:insert(itemText)
-end
-
--- Hiển thị menu
-menuFrame:toFront()
-menu:toFront()
+task.wait(2)
