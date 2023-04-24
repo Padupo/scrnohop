@@ -319,11 +319,9 @@ confirm.Font = Enum.Font.Gotham
 confirm.Text = "UNLOCăK"
 confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
 confirm.TextSize = 14.000
-confirm.MouseButton1Click:Connect(function()
-ZENHUB:Destroy()
+Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/fpsvietsub2epkey"))()
 else
-DiscordLib:Notification("Key System" , "Trứng Dái đang Được Xác Minh hãy chờ nhé" , 3)
 end
 end)
 
