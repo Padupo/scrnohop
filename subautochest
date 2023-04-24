@@ -306,24 +306,11 @@ setclipboard("https://subhachne.blogspot.com/p/keyfree.html")
             DiscordLib:Notification("Link lấy key" , "Đã được Sao Chép bạn mở Trình Duyệt hoặc Chome để lấy rồi quay lại đây nhé" , 3)
 end)
 
+MainTab:AddButton({
+	Name = "Bật Auto Chest",
+	Callback = function()   loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/autochestngon"))();
+  	end    
 
-UICorner_3.CornerRadius = UDim.new(0, 4)
-UICorner_3.Parent = getkey
-
-confirm.Name = "confirm"
-confirm.Parent = MAIN
-confirm.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
-confirm.Position = UDim2.new(0.529113948, 0, 0.532407403, 0)
-confirm.Size = UDim2.new(0, 172, 0, 32)
-confirm.Font = Enum.Font.Gotham
-confirm.Text = "UNLOCăK"
-confirm.TextColor3 = Color3.fromRGB(255, 255, 255)
-confirm.TextSize = 14.000
-Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Padupo/scrnohop/main/fpsvietsub2epkey"))()
-else
-end
-end)
 
 UICorner_4.CornerRadius = UDim.new(0, 4)
 UICorner_4.Parent       = confirm
