@@ -803,7 +803,7 @@ local postog12 = Instance.new("UIStroke")
  ImageLabel.BackgroundTransparency = 1.000
  ImageLabel.BorderSizePixel = 0
  ImageLabel.Position = UDim2.new(-0.018, 0,-0.252, 0)
- ImageLabel.Size = UDim2.new(0, 45,0, 45)
+ ImageLabel.Size = UDim2.new(0, 25,0, 25)
  ImageLabel.Image = "rbxassetid://13259410877"
  ImageLabel.ImageColor3 = Color3.fromRGB(224,224,224)
  
