@@ -4499,15 +4499,15 @@ spawn(function()
             if typeof(xShadowx) == "table" then
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
-                    xShadowx.activeController.timeToNextAttack = 2
-                    xShadowx.activeController.hitboxMagnitude = 200
+                    xShadowx.activeController.timeToNextAttack = 0
+                    xShadowx.activeController.hitboxMagnitude = 100
                     xShadowx.activeController.active = false
-                    xShadowx.activeController.timeToNextBlock = 2
+                    xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
-                    xShadowx.activeController.increment = 1
+                    xShadowx.activeController.increment = 10
                     xShadowx.activeController.blocking = false
                     xShadowx.activeController.attacking = false
-                    xShadowx.activeController.humanoid.AutoRotate = 1
+                    xShadowx.activeController.humanoid.AutoRotate = 20
                 end)
             end
         end
