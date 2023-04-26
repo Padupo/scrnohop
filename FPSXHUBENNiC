@@ -3802,7 +3802,7 @@ end)
  
 --------------------------------------------------------------------
 
-local Library = Update:Window("FTS X HUB ","")
+local Library = Update:Window("FTS X HUB1 ","")
 ------------------------------------------
 
 spawn(function()
