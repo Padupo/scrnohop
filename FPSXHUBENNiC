@@ -32,7 +32,7 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.BackgroundTransparency = 1.000
         ThunderImageUI.BorderSizePixel = 0
         ThunderImageUI.Position = UDim2.new(0.0, 0, 0.0, 0)
-        ThunderImageUI.Size = UDim2.new(0, 70, 0, 62)
+        ThunderImageUI.Size = UDim2.new(0, 70, 0, 70)
         ThunderImageUI.Image = "http://www.roblox.com/asset/?id=13259071764"
 
 local SOMEXHUB = {}
