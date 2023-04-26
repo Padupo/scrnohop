@@ -4219,7 +4219,7 @@ spawn(function()
 end)
 
 --------------------------
-local Main = Library:Tab("Bản thân","rbxassetid://11446825283")
+local Main = Library:Tab("Bản thân1","rbxassetid://11446825283")
 local Setting = Library:Tab("Cài đặt","rbxassetid://11446835336")
 local Weapon = Library:Tab("vũ khí","rbxassetid://11446859498")
 local Race = Library:Tab("Tộc V4","rbxassetid://11446900930")
@@ -4500,14 +4500,14 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 200
+                    xShadowx.activeController.hitboxMagnitude = 900
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
-                    xShadowx.activeController.increment = 4
+                    xShadowx.activeController.increment = 10
                     xShadowx.activeController.blocking = false
                     xShadowx.activeController.attacking = false
-                    xShadowx.activeController.humanoid.AutoRotate = 50
+                    xShadowx.activeController.humanoid.AutoRotate = 500
                 end)
             end
         end
