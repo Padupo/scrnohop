@@ -163,7 +163,7 @@ function Update:Window(text,logo,keybind)
  Logo.BackgroundColor3 = Color3.fromRGB(224,224,224)
  Logo.BackgroundTransparency = 1.000
  Logo.Position = UDim2.new(-0.01, 0,-0.170, 0)
- Logo.Size = UDim2.new(0, 55,0, 45)
+ Logo.Size = UDim2.new(0, 85,0, 85)
 Logo.Image = "rbxassetid://13259410877"
 
 	local Name = Instance.new("TextLabel")
