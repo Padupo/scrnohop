@@ -2937,16 +2937,16 @@ end
     --------------------------------------------------------------------
     local Library = Update:Window("LOLI");
     --------------------------------------------------------------------
-    local Main = Library:Tab("Main","rbxassetid://6026568198")
-local Setting = Library:Tab("Settings","rbxassetid://6034509993")
-local Weapon = Library:Tab("Weapons","rbxassetid://7251993295")
-local Stats = Library:Tab("Stats","rbxassetid://7040410130")
-    local Combat = Library:Tab("Player","rbxassetid://7251993295")
-    local Teleport = Library:Tab("Teleport","rbxassetid://6035190846")
+    local Main = Library:Tab("Trang chính","rbxassetid://6026568198")
+local Setting = Library:Tab(Cài Đặt","rbxassetid://6034509993")
+local Weapon = Library:Tab("Đấu Kiếm","rbxassetid://7251993295")
+local Stats = Library:Tab("Thống kê","rbxassetid://7040410130")
+    local Combat = Library:Tab("Người Chơi","rbxassetid://7251993295")
+    local Teleport = Library:Tab("Dịch Chuyển","rbxassetid://6035190846")
     local Dungeon = Library:Tab("Raid+Esp","rbxassetid://7044284832")
-    local DevilFruit = Library:Tab("Fruit","rbxassetid://7044233235")
-    local Shop = Library:Tab("Shop","rbxassetid://6031265976")
-    local Misc = Library:Tab("Misc","rbxassetid://6034509993")
+    local DevilFruit = Library:Tab("Trái ác quỷ","rbxassetid://7044233235")
+    local Shop = Library:Tab("Cửa hàng","rbxassetid://6031265976")
+    local Misc = Library:Tab("Linh tinh","rbxassetid://6034509993")
     --------------------------------------------------------------------
 Setting:Seperator("「 Credits 」")
     Setting:Label("Made By GoOoTiE#1331 ")
@@ -2968,7 +2968,7 @@ setclipboard("https://discord.gg/g2setDfUCW")
     
     Setting:Seperator("「 Setting 」")
     
-    Setting:Toggle("Auto Set Spawn Points",true,function(value)
+    Setting:Toggle("Tự Lưu Điểm Hồi sinh",true,function(value)
         _G.AutoSetSpawn = value
     end)
     
@@ -2984,11 +2984,11 @@ setclipboard("https://discord.gg/g2setDfUCW")
         end)
     end)
     
-    Setting:Toggle("Bring Mob",true,function(value)
+    Setting:Toggle("Gom quái",true,function(value)
         _G.BringMonster = value
     end)
     
-Setting:Toggle("Fast Attack [1]",true,function(Fast)
+Setting:Toggle("Đánh nhanh [1]",true,function(Fast)
     _G.FastAttack = Fast
 end)
 
@@ -3015,7 +3015,7 @@ spawn(function()
     end
 end)
 
-    Setting:Toggle("Fast Attack [2]",nil,function(value)
+    Setting:Toggle("Đánh Nhanh [2]",nil,function(value)
         _G.FastAttack2 = value
     end)   
     
@@ -3054,7 +3054,7 @@ spawn(function()
     end)
 end)
     
-Setting:Toggle("SuperFastAttack (Kickable)",false,function(value)
+Setting:Toggle("Đánh Tốc Độ Cao (Kickable)",false,function(value)
         local SuperFastMode = value -- à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¹€à¸›à¹‡à¸™à¸ˆà¸£à¸´à¸‡à¸–à¹‰à¸²à¸„à¸¸à¸“à¸•à¹‰à¸­à¸‡à¸à¸²à¸£à¹‚à¸ˆà¸¡à¸•à¸µ Super Super Super Fast (à¹€à¸Šà¹ˆà¸™à¸à¸²à¸£à¸†à¹ˆà¸²à¸—à¸±à¸™à¸—à¸µ) à¹à¸•à¹ˆà¸ˆà¸°à¸—à¸³à¹ƒà¸«à¹‰à¹€à¸à¸¡à¹€à¸•à¸°à¸„à¸¸à¸“à¸¡à¸²à¸à¸à¸§à¹ˆà¸²à¹‚à¸«à¸¡à¸”à¸›à¸à¸•à¸´
              _G.SuperFastMode = value
 
@@ -3129,7 +3129,7 @@ end
 
     end)
 
-Setting:Toggle("Remove attack Animation",true,function(value)
+Setting:Toggle("Xóa hoạt ảnh tấn công",true,function(value)
     getgenv().A = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib).wrapAttackAnimationAsync 
 getgenv().B = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework.Particle).play
 spawn(function()
@@ -3153,7 +3153,7 @@ spawn(function()
 end)
 end)
   
-Setting:Toggle("Delete Attack FIx",nil,function(d)
+Setting:Toggle("Xóa tấn công FIx",nil,function(d)
     _G.DeleteAttackFx = d
     if _G.DeleteAttackFx == true then
     while _G.DeleteAttackFx do wait()
@@ -3179,7 +3179,7 @@ end)
 end) 
 
 
-Setting:Toggle("Remove Fog",RemoveFog,function(value)
+Setting:Toggle("Loại bỏ sương mù",RemoveFog,function(value)
         RemoveFog = value
         if not RemoveFog then return end
         while RemoveFog do wait()
@@ -3191,7 +3191,7 @@ Setting:Toggle("Remove Fog",RemoveFog,function(value)
     end)
    
     
-    Setting:Toggle("Hide Ui (Reduce Lag)",false,function(value)
+    Setting:Toggle("Ẩn Ui (Giảm Lag)",false,function(value)
         if value == true then
             game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Beli.Visible = false
             game:GetService("Players")["LocalPlayer"].PlayerGui.Main.HP.Visible = false
@@ -3233,7 +3233,7 @@ Setting:Toggle("Remove Fog",RemoveFog,function(value)
     end
 end) 
     
-        Setting:Toggle("White Screen [ Booster FPS ]",_G.WhiteScreen,function(value)
+        Setting:Toggle("Màn hình trắng [ Booster FPS]",_G.WhiteScreen,function(value)
     _G.WhiteScreen = value
 if _G.WhiteScreen == true then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
@@ -3242,7 +3242,7 @@ elseif _G.WhiteScreen == false then
 end
 end)
 
- Setting:Toggle("Anti AFK",false,function(value)
+ Setting:Toggle("Tránh Ban HAck",false,function(value)
         _G.AFK = value
         end)
     
@@ -3268,7 +3268,7 @@ spawn(function()
     end
 end)
 
-Setting:Button("Remove Sound",function()
+Setting:Button("Xóa âm Thanh",function()
  
             for i, v in pairs(game.Workspace["_WorldOrigin"]:GetChildren()) do
                 if v.Name == "CurvedRing" or v.Name == "SlashHit" or v.Name == "SwordSlash" or v.Name == "Sounds" then
@@ -3278,11 +3278,11 @@ Setting:Button("Remove Sound",function()
 end)
    
     
-    Setting:Button("Delete DamageCounter", function()
+    Setting:Button("Xóa bộ đếm thiệt hại", function()
         game:GetService("ReplicatedStorage").Assets.GUI.DamageCounter.Enabled = false
     end)
     
-    Setting:Button("FPS Boost",function()
+    Setting:Button("Tăng FPS",function()
         pcall(function()
             game:GetService("Lighting").FantasySky:Destroy()
             local g = game
@@ -3331,14 +3331,14 @@ end)
     end)
    
     
-    Setting:Button("Unlock FPS",function()
+    Setting:Button("Mở khóa Fps",function()
         setfpscap(100)
     end)
-Setting:Button("Invisible",function()
+Setting:Button("Vô hình",function()
         game:GetService("Players").LocalPlayer.Character.LowerTorso:Destroy()
     end)
     
-    Setting:Button("Click TP Tool",function()
+    Setting:Button("Nhấp vào Công cụ TP",function()
         local plr = game:GetService("Players").LocalPlayer
         local mouse = plr:GetMouse()
         local tool = Instance.new("Tool")
@@ -3353,7 +3353,7 @@ Setting:Button("Invisible",function()
         tool.Parent = plr.Backpack
     end)
     
-    Setting:Button("Stop All Tween",function()
+    Setting:Button("Dừng tất cả Tween",function()
         TP(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
         _G.Clip = false
     end)
@@ -3419,19 +3419,18 @@ end)
         _G.SelectWeapon = value
     end)
     
-    Main:Button("Refresh Weapon",function()
+    Main:Button("làm mới vũ khí",function()
         SelectWeapona:Clear()
         for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do  
             SelectWeapona:Add(v.Name)
         end
     end)
     
-Update:Notification("Hello, "  ..game.Players.LocalPlayer.DisplayName.. " Welcome LoliHub V2! What's new? | [+] New Ui [+] New Functions [+] Fix Some Bugs [+] Optimise Script [+] Much More... ")
-    
+Update:Notification("Xin chào, "  ..game.Players.LocalPlayer.DisplayName.. "Chào Mừng bạn đến với Loli! Bạn thấy chứ? | [+]Giao diện người dùng mới [+] Chức năng mới [+] Sửa một số lỗi [+] Tối ưu hóa tập lệnh [+] Nhiều hơn nữa... ")
     Main:Seperator("「 Main")
    
     
-    local AutoFarm = Main:Toggle("Auto Farm Level",_G.AutoFarm,function(value)
+    local AutoFarm = Main:Toggle("Tự Cày Lever",_G.AutoFarm,function(value)
 _G.AutoFarm = value
         StopTween(_G.AutoFarm)
         
@@ -3506,7 +3505,7 @@ _G.AutoFarm = value
     
     Main:Seperator("「 Ectoplasm 」")
         
-    Main:Toggle("Auto Farm Ectoplasm",_G.AutoEctoplasm,function(value)
+    Main:Toggle("Tự Động Ectoplasm",_G.AutoEctoplasm,function(value)
         _G.AutoEctoplasm = value
         StopTween(_G.AutoEctoplasm)
     end)
@@ -3552,7 +3551,7 @@ _G.AutoFarm = value
     
     Main:Seperator("「 Bone 」")
     
-    local BoneFarm = Main:Toggle("Auto Farm Bone",_G.Auto_Bone,function(value)
+    local BoneFarm = Main:Toggle(Tự Động  Farm Bone",_G.Auto_Bone,function(value)
         _G.Auto_Bone = value
         StopTween(_G.Auto_Bone)
     end)
@@ -3599,7 +3598,7 @@ _G.AutoFarm = value
         end
     end)
     
-    Main:Toggle("Auto Random Surprise",_G.Auto_Random_Bone,function(value)
+    Main:Toggle("Tự Động  Random Surprise",_G.Auto_Random_Bone,function(value)
         _G.Auto_Random_Bone = value
     end)
     
@@ -3613,7 +3612,7 @@ _G.AutoFarm = value
         end)
     end)
         
-        Main:Button("Checking Bone", function()
+        Main:Button("Xem Bone", function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Checking Bone", 
         Text = ("Your Bone : "..(game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Check")))
@@ -3621,15 +3620,15 @@ _G.AutoFarm = value
     wait(1)
 end)
     
-    Main:Seperator("「 Farm Chest 」")
+    Main:Seperator("「Tự Động  Farm Chest 」")
     
-    Main:Button("Tp Chest (Risky!)",function()
+    Main:Button("Tự Động Tp Chest (Risky!)",function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/chestfarm"))()
     end)
     
     Main:Seperator("「 Auto Seas 」")
 
-        Main:Toggle("Auto Second Sea",_G.AutoSecondSea,function(value)
+        Main:Toggle("Tự Động qua Second Sea",_G.AutoSecondSea,function(value)
             _G.AutoSecondSea = value
             StopTween(_G.AutoSecondSea)
         end)
@@ -3689,7 +3688,7 @@ end)
             end
         end)
 
-        Main:Toggle("Auto Third Sea",_G.AutoThirdSea,function(value)
+        Main:Toggle("Tự Động Third Sea",_G.AutoThirdSea,function(value)
             _G.AutoThirdSea = value
             StopTween(_G.AutoThirdSea)
         end)
@@ -3738,7 +3737,7 @@ end)
     
     
     Main:Seperator("「 Factory 」")
-        Main:Toggle("Auto Farm Factory",_G.AutoFactory,function(value)
+        Main:Toggle("Tự Động Farm Factory",_G.AutoFactory,function(value)
             _G.AutoFactory = value
             StopTween(_G.AutoFactory)
         end)
@@ -3770,7 +3769,7 @@ end)
    Weapon:Seperator("「 Auto All Sword 」")
    Weapon:Line()
    
-Weapon:Seperator("「 Auto Dough 」")
+Weapon:Seperator("「 Tự Động  Dough 」")
     
     local MobKilled = Weapon:Label("Killed")
     
@@ -3790,7 +3789,7 @@ Weapon:Seperator("「 Auto Dough 」")
         end
     end)
     
-    Weapon:Toggle("Auto Spikey Trident",_G.AutoDoughtBoss,function(value)
+    Weapon:Toggle("Tự Động  Spikey Trident",_G.AutoDoughtBoss,function(value)
         _G.AutoDoughtBoss = value
         StopTween(_G.AutoDoughtBoss)
     end)
@@ -3895,12 +3894,12 @@ Weapon:Seperator("「 Auto Dough 」")
     
 Weapon:Seperator("「 Auto Buddy Sword 」")
     
-   Weapon:Toggle("Auto Buddy Sword",_G.AutoBudySword,function(value)
+   Weapon:Toggle("Tự Động  Buddy Sword",_G.AutoBudySword,function(value)
         _G.AutoBudySword = value
         StopTween(_G.AutoBudySword)
     end)
     
-    Weapon:Toggle("Auto Buddy Sword Hop",_G.AutoBudySwordHop,function(value)
+    Weapon:Toggle("Tự Động  Buddy Sword Hop",_G.AutoBudySwordHop,function(value)
         _G.AutoBudySwordHop = value
     end)
     
@@ -3952,7 +3951,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Elite Hunter",_G.AutoElitehunter,function(value)
+    Weapon:Toggle("Tự Động  Elite Hunter",_G.AutoElitehunter,function(value)
         _G.AutoElitehunter = value
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
         StopTween(_G.AutoElitehunter)
@@ -4014,18 +4013,18 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
         end
     end)
     
-    Weapon:Toggle("Auto Elite Hunter Hop",_G.AutoEliteHunterHop,function(value)
+    Weapon:Toggle("Tự Động  Elite Hunter Hop",_G.AutoEliteHunterHop,function(value)
         _G.AutoEliteHunterHop = value
     end)
     
     Weapon:Seperator("「 Hallow Scythe 」")
     
-    Weapon:Toggle("Auto Hallow Scythe",_G.AutoFarmBossHallow,function(value)
+    Weapon:Toggle("Tự Động  Hallow Scythe",_G.AutoFarmBossHallow,function(value)
         _G.AutoFarmBossHallow = value
         StopTween(_G.AutoFarmBossHallow)
     end)
     
-    Weapon:Toggle("Auto Hallow Scythe Hop",_G.AutoFarmBossHallowHop,function(value)
+    Weapon:Toggle("Tự Động  Hallow Scythe Hop",_G.AutoFarmBossHallowHop,function(value)
         _G.AutoFarmBossHallowHop = value
     end)
     
@@ -4067,7 +4066,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
     
     Weapon:Seperator("「 Dark Dagger 」")
     
-    Weapon:Toggle("Auto Dark Dagger",_G.AutoDarkDagger,function(value)
+    Weapon:Toggle("Tự Động  Dark Dagger",_G.AutoDarkDagger,function(value)
         _G.AutoDarkDagger = value
         StopTween(_G.AutoDarkDagger)
     end)
@@ -4100,7 +4099,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Dark Dagger Hop",_G.AutoDarkDagger_Hop,function(value)
+    Weapon:Toggle("Tự Động  Dark Dagger Hop",_G.AutoDarkDagger_Hop,function(value)
         _G.AutoDarkDagger_Hop = value
     end)
     
@@ -4116,7 +4115,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
     
     Weapon:Seperator("「 Swan Glasses 」")
     
-    Weapon:Toggle("Auto Swan Glasses",_G.AutoFarmSwanGlasses,function(value)
+    Weapon:Toggle("Tự Động  Swan Glasses",_G.AutoFarmSwanGlasses,function(value)
         _G.AutoFarmSwanGlasses = value
         StopTween(_G.AutoFarmSwanGlasses)
     end)
@@ -4152,7 +4151,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Swan Glasses Hop",_G.AutoFarmSwanGlasses_Hop,function(value)
+    Weapon:Toggle("Tự Động  Swan Glasses Hop",_G.AutoFarmSwanGlasses_Hop,function(value)
         _G.AutoFarmSwanGlasses_Hop = value
     end)
     
@@ -4168,12 +4167,12 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
     
     Weapon:Seperator("「 Saber 」")
     
-    Weapon:Toggle("Auto Saber",_G.AutoSaber,function(value)
+    Weapon:Toggle("Tự Động  Saber",_G.AutoSaber,function(value)
         _G.AutoSaber = value
         StopTween(_G.AutoSaber)
     end)
     
-    Weapon:Toggle("Auto Saber Hop",_G.AutoSaber_Hop,function(value)
+    Weapon:Toggle("Tự Động  Saber Hop",_G.AutoSaber_Hop,function(value)
         _G.AutoSaber_Hop = value
     end)
     
@@ -4217,7 +4216,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
     
     Weapon:Seperator("「 Legendary Sword 」")
     
-    Weapon:Toggle("Auto Legendary Sword",_G.AutoBuyLegendarySword,function(value)
+    Weapon:Toggle("Tự Động  Legendary Sword",_G.AutoBuyLegendarySword,function(value)
         _G.AutoBuyLegendarySword = value
     end)
     
@@ -4249,17 +4248,17 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
         end
     end)
     
-    Weapon:Toggle("Auto Legendary Sword Hop",_G.AutoBuyLegendarySword_Hop,function(value)
+    Weapon:Toggle("Tự Động  Legendary Sword Hop",_G.AutoBuyLegendarySword_Hop,function(value)
         _G.AutoBuyLegendarySword_Hop = value
     end)
     
     Weapon:Seperator("「 Enchancement Colour 」")
     
-    Weapon:Toggle("Auto Enchancement Colour",_G.AutoBuyEnchancementColour,function(value)
+    Weapon:Toggle("Tự Động  Enchancement Colour",_G.AutoBuyEnchancementColour,function(value)
         _G.AutoBuyEnchancementColour = value
     end)
     
-    Weapon:Toggle("Auto Enchancement Hop",_G.AutoBuyEnchancementColour_Hop,function(value)
+    Weapon:Toggle("Tự Động  Enchancement Hop",_G.AutoBuyEnchancementColour_Hop,function(value)
         _G.AutoBuyEnchancementColour_Hop = value
     end)
     
@@ -4281,7 +4280,7 @@ Weapon:Seperator("「 Auto Buddy Sword 」")
     
 Weapon:Seperator("「 Auto Rengoko 」")
     
-        Weapon:Toggle("Auto Rengoku",_G.AutoRengoku,function(value)
+        Weapon:Toggle("Tự Động  Rengoku",_G.AutoRengoku,function(value)
         _G.AutoRengoku = value
         StopTween(_G.AutoRengoku)
     end)
@@ -4320,7 +4319,7 @@ Weapon:Seperator("「 Auto Rengoko 」")
     end)
 Weapon:Seperator("「 Auto Yama 」")
     
-    Weapon:Toggle("Auto Yama",_G.AutoYama,function(value)
+    Weapon:Toggle("Tự Động  Yama",_G.AutoYama,function(value)
         _G.AutoYama = value
         StopTween(_G.AutoYama)
     end)
@@ -4341,7 +4340,7 @@ Weapon:Seperator("「 Auto Yama 」")
     Weapon:Seperator("「 Fighting Style 」")
     Weapon:Line()
     
-    Weapon:Toggle("Auto Superhuman",_G.AutoSuperhuman,function(value)
+    Weapon:Toggle("Tự Động  Superhuman",_G.AutoSuperhuman,function(value)
         _G.AutoSuperhuman = value
     end)
     
@@ -4418,7 +4417,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto DeathStep",_G.AutoDeathStep,function(value)
+    Weapon:Toggle("Tự Động  DeathStep",_G.AutoDeathStep,function(value)
         _G.AutoDeathStep = value
     end)
     
@@ -4444,7 +4443,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end
     end)
     
-    Weapon:Toggle("Auto Sharkman Karate",_G.AutoSharkman,function(value)
+    Weapon:Toggle("Tự Động  Sharkman Karate",_G.AutoSharkman,function(value)
         _G.AutoSharkman = value
     end)
     
@@ -4492,7 +4491,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Electric Claw",_G.AutoElectricClaw,function(value)
+    Weapon:Toggle("Tự Động  Electric Claw",_G.AutoElectricClaw,function(value)
         _G.AutoElectricClaw = value
         StopTween(_G.AutoElectricClaw)
     end)
@@ -4563,7 +4562,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Dragon Talon",_G.AutoDragonTalon,function(value)
+    Weapon:Toggle("Tự Động  Dragon Talon",_G.AutoDragonTalon,function(value)
         _G.AutoDragonTalon = value
     end)
     
@@ -4591,7 +4590,7 @@ Weapon:Seperator("「 Auto Yama 」")
     
     Weapon:Seperator("「 Other 」")
     
-    Weapon:Toggle("Auto Musketeer Hat",_G.AutoMusketeerHat,function(value)
+    Weapon:Toggle("Tự Động  Musketeer Hat",_G.AutoMusketeerHat,function(value)
         _G.AutoMusketeerHat = value
         StopTween(_G.AutoMusketeerHat)
     end)
@@ -4672,7 +4671,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Rainbow Haki",_G.Auto_Rainbow_Haki,function(value)
+    Weapon:Toggle("Tự Động  Rainbow Haki",_G.Auto_Rainbow_Haki,function(value)
         _G.Auto_Rainbow_Haki = value
         StopTween(_G.Auto_Rainbow_Haki)
     end)
@@ -4799,7 +4798,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Observation Haki v2",_G.AutoObservationv2,function(value)
+    Weapon:Toggle("Tự Động  Observation Haki v2",_G.AutoObservationv2,function(value)
         _G.AutoObservationv2 = value
         StopTween(_G.AutoObservationv2)
     end)
@@ -4846,7 +4845,7 @@ Weapon:Seperator("「 Auto Yama 」")
    
     
     
-    Weapon:Toggle("Auto Evo Race",_G.Auto_EvoRace,function(value)
+    Weapon:Toggle("Tự Động  Evo Race",_G.Auto_EvoRace,function(value)
         _G.Auto_EvoRace = value
         StopTween(_G.Auto_EvoRace)
     end)
@@ -4901,7 +4900,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Bartlio Quest",_G.AutoBartilo,function(value)
+    Weapon:Toggle("Tự Động  Bartlio Quest",_G.AutoBartilo,function(value)
         _G.AutoBartilo = value
     end)
     
@@ -4994,7 +4993,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Weapon:Toggle("Auto Holy Torch",_G.AutoHolyTorch,function(value)
+    Weapon:Toggle("Tự Động  Holy Torch",_G.AutoHolyTorch,function(value)
         _G.AutoHolyTorch = value
         StopTween(_G.AutoHolyTorch)
     end)
@@ -5235,7 +5234,7 @@ Weapon:Seperator("「 Auto Yama 」")
     
     Main:Seperator("「 Mastery 」")
     
-    Main:Toggle("Auto Farm BF Mastery",_G.AutoFarmFruitMastery,function(value)
+    Main:Toggle("Tự Động  Farm BF Mastery",_G.AutoFarmFruitMastery,function(value)
         _G.AutoFarmFruitMastery = value
         StopTween(_G.AutoFarmFruitMastery)
         if _G.AutoFarmFruitMastery == false then
@@ -5491,7 +5490,7 @@ Weapon:Seperator("「 Auto Yama 」")
         end)
     end)
     
-    Main:Toggle("Auto Farm Gun Mastery",_G.AutoFarmGunMastery,function(value)
+    Main:Toggle("Tự Động  Farm Gun Mastery",_G.AutoFarmGunMastery,function(value)
         _G.AutoFarmGunMastery = value
         StopTween(_G.AutoFarmGunMastery)
     end)
@@ -5828,11 +5827,11 @@ Main:Seperator("「 Mastery Skill 」")
         end
     end
     
-    local BossName = Main:Dropdown("Select Boss",Boss,function(value)
+    local BossName = Main:Dropdown("Chọn Boss",Boss,function(value)
         _G.SelectBoss = value
     end)
     
-    Main:Button("Refresh Boss",function()
+    Main:Button("Làm mới Boss",function()
         BossName:Clear()
             for i, v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
             if string.find(v.Name, "Boss") then
@@ -5841,7 +5840,7 @@ Main:Seperator("「 Mastery Skill 」")
         end
     end)
     
-    Main:Toggle("Auto Farm Boss",_G.AutoFarmBoss,function(value)
+    Main:Toggle("Tự Động  Farm Boss",_G.AutoFarmBoss,function(value)
      CheckBossQuest()
 	if AutoBossQuest == false then
 	    wait(1)
@@ -5852,12 +5851,12 @@ Main:Seperator("「 Mastery Skill 」")
         StopTween(_G.AutoFarmBoss)
     end)
     
-  Main:Toggle("Auto Farm All Boss",_G.AutoAllBoss,function(value)
+  Main:Toggle("Tự Động  Farm All Boss",_G.AutoAllBoss,function(value)
         _G.AutoAllBoss = value
         StopTween(_G.AutoAllBoss)
     end)
     
-    Main:Toggle("Auto Farm All Boss Hop",_G.AutoAllBossHop,function(value)
+    Main:Toggle("Tự Động Farm All Boss Hop",_G.AutoAllBossHop,function(value)
         _G.AutoAllBossHop = value
     end)
     
@@ -5966,7 +5965,7 @@ spawn(function()
         end
     end)
     
-    Main:Toggle("Auto Farm Observation",_G.AutoObservation,function(value)
+    Main:Toggle("Tự Động  Farm Observation",_G.AutoObservation,function(value)
         _G.AutoObservation = value
         StopTween(_G.AutoObservation)
     end)
@@ -5988,7 +5987,7 @@ spawn(function()
         end
     end)
     
-    Main:Toggle("Auto Farm Observation Hop",_G.AutoObservation_Hop,function(value)
+    Main:Toggle("Tự Động Farm Observation Hop",_G.AutoObservation_Hop,function(value)
         _G.AutoObservation_Hop = value
     end)
     
@@ -6067,12 +6066,12 @@ spawn(function()
     
          Main:Seperator("「 Law Boss 」")
     
-    Main:Toggle("Auto Law Boss", _G.AutoOderSword,function(value)
+    Main:Toggle("Tự Động  Law Boss", _G.AutoOderSword,function(value)
          _G.AutoOderSword = value
         StopTween( _G.AutoOderSword)
     end)
     
-    Main:Toggle("Auto Law Boss Hop", _G.AutoOderSwordHop,function(value)
+    Main:Toggle("Tự Động  Law Boss Hop", _G.AutoOderSwordHop,function(value)
          _G.AutoOderSwordHop = value
     end)
     
@@ -6112,7 +6111,7 @@ spawn(function()
         end
     end)
     
-    Main:Button("Buy Microchip Law Boss",function()
+    Main:Button("Mua Khóa Microchip Law Boss",function()
     local args = {
        [1] = "BlackbeardReward",
        [2] = "Microchip",
@@ -6121,7 +6120,7 @@ spawn(function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 end)
 
-    Main:Button("Start Go To Raid Law Boss",function()
+    Main:Button("Mở Bản Đồ Raid Law Boss",function()
         if World2 then
             fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon.Button.Main.ClickDetector)
         end
@@ -6193,7 +6192,7 @@ end)
         _G.SelectPly = value
     end)
     
-    Combat:Button("Refresh Player",function()
+    Combat:Button("Làm mới Player",function()
         Playerslist = {}
         SelectedPly:Clear()
         for i,v in pairs(game:GetService("Players"):GetChildren()) do  
@@ -6201,7 +6200,7 @@ end)
         end
     end)
     
-    Combat:Toggle("Spectate Player",false,function(value)
+    Combat:Toggle("khán giả chơi",false,function(value)
         SpectatePlys = value
         local plr1 = game:GetService("Players").LocalPlayer.Character.Humanoid
         local plr2 = game:GetService("Players"):FindFirstChild(_G.SelectPly)
@@ -6211,7 +6210,7 @@ end)
         game:GetService("Workspace").Camera.CameraSubject = game:GetService("Players").LocalPlayer.Character.Humanoid
     end)
     
-    Combat:Toggle("Teleport",false,function(value)
+    Combat:Toggle("Dịch Chuyển",false,function(value)
         _G.TeleportPly = value
         pcall(function()
             if _G.TeleportPly then
@@ -6221,7 +6220,7 @@ end)
         end)
     end)
     
-    Combat:Toggle("Auto Farm Player",false,function(value)
+    Combat:Toggle("Tự động Farm Player",false,function(value)
         _G.Auto_Kill_Ply = value
         StopTween(_G.Auto_Kill_Ply)
     end)
@@ -6261,7 +6260,7 @@ end)
         end
     end)
     
-    Combat:Seperator("「 Aimbot 」")
+    Combat:Seperator("「 Cố địt 」")
      
     spawn(function()
         while wait() do
@@ -6682,7 +6681,7 @@ end)
         end)
     end)
     
-    Combat:Toggle("Auto Farm Bounty Hop",_G.AutoFarmBounty_Hop,function(value)
+    Combat:Toggle("Tự động  Farm Bounty Hop",_G.AutoFarmBounty_Hop,function(value)
         _G.AutoFarmBounty_Hop = value
     end)
     
@@ -7172,7 +7171,7 @@ Teleport:Seperator("「 Island 」")
         end)
     end)
     
-        Dungeon:Toggle("Auto Farm Dungeon",_G.Auto_Dungeon,function(value)
+        Dungeon:Toggle("Tự động  Farm Dungeon",_G.Auto_Dungeon,function(value)
         _G.Auto_Dungeon = value
         StopTween(_G.Auto_Dungeon)
     end)
@@ -7221,7 +7220,7 @@ Teleport:Seperator("「 Island 」")
         end)
     end)
     
-    Dungeon:Toggle("Auto Awakener",_G.Auto_Awakener,function(value)
+    Dungeon:Toggle(Tự động  Awakener",_G.Auto_Awakener,function(value)
         _G.Auto_Awakener = value
     end)
     
@@ -7235,7 +7234,7 @@ Teleport:Seperator("「 Island 」")
             end
         end)
     end)
-    Dungeon:Toggle("Kill Aura",nil,function(value)
+    Dungeon:Toggle("Tự động  Kill Aura",nil,function(value)
     Killaura = value
     end) 
 spawn(function()
@@ -7262,7 +7261,7 @@ end)
         _G.SelectChip = value
     end)
     
-    Dungeon:Toggle("Auto Select Dungeon",_G.AutoSelectDungeon,function(value)
+    Dungeon:Toggle("Tự động  Select Dungeon",_G.AutoSelectDungeon,function(value)
         _G.AutoSelectDungeon = value
     end)
     
@@ -7300,7 +7299,7 @@ end)
         end
     end)
     
-    Dungeon:Toggle("Auto Buy Chip",_G.AutoBuyChip,function(value)
+    Dungeon:Toggle("Tự động  Buy Chip",_G.AutoBuyChip,function(value)
         _G.AutoBuyChip = value
     end)
     
@@ -7318,7 +7317,7 @@ end)
         end)
     end)
     
-    Dungeon:Button("Buy Chip Select",function()
+    Dungeon:Button("Mua Chip Select",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("RaidsNpc","Select",_G.SelectChip)
     end)
     
@@ -7344,7 +7343,7 @@ end)
         end
     end)
     
-    Dungeon:Button("Start Go To Dungeon",function()
+    Dungeon:Button("Mở Go To Dungeon",function()
         if World2 then
             fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
         elseif World3 then
@@ -7352,7 +7351,7 @@ end)
         end
     end)
     
-        Dungeon:Button("Next Island",function()
+        Dungeon:Button("Chuyển Đảo",function()
         pcall(function()
             if game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5") then
                 TP(game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 5").CFrame*CFrame.new(0,70,100))
@@ -7369,63 +7368,63 @@ end)
     end)
     
     if World2 then
-        Dungeon:Button("Teleport to Lab",function()
+        Dungeon:Button("Dịch chuyển đến phòng thí nghiệm",function()
             TP(CFrame.new(-6438.73535, 250.645355, -4501.50684))
             end)
     elseif World3 then
-        Dungeon:Button("Teleport to Lab",function()
+        Dungeon:Button("Dịch chuyển đến phòng thí nghiệm",function()
             TP(CFrame.new(-5017.40869, 314.844055, -2823.0127, -0.925743818, 4.48217499e-08, -0.378151238, 4.55503146e-09, 1, 1.07377559e-07, 0.378151238, 9.7681621e-08, -0.925743818))
         end)
     end
     
     if World2 then
-        Dungeon:Button("Awakening Room",function()
+        Dungeon:Button("phòng thức tỉnh",function()
             TP(CFrame.new(266.227783, 1.39509034, 1857.00732))
         end)
     elseif World3 then
-        Dungeon:Button("Awakening Room",function()
+        Dungeon:Button("phòng thức tỉnh",function()
             TP(CFrame.new(-11571.440429688, 49.172668457031, -7574.7368164062))
         end)
     end
     
   Dungeon:Seperator("「 ESP 」")
     
-    Dungeon:Toggle("ESP Player",false,function(value)
+    Dungeon:Toggle("vị trí ESP Player",false,function(value)
         ESPPlayer = value
         while ESPPlayer do wait()
             UpdateEspPlayer()
         end
     end)
     
-    Dungeon:Toggle("ESP Chest",false,function(value)
+    Dungeon:Toggle("vị trí ESP Chest",false,function(value)
         ChestESP = value
         while ChestESP do wait()
             UpdateChestEsp() 
         end
     end)
     
-    Dungeon:Toggle("ESP Fruit",false,function(value)
+    Dungeon:Toggle("vị trí ESP Fruit",false,function(value)
         DevilFruitESP = value
         while DevilFruitESP do wait()
             UpdateBfEsp() 
         end
     end)
     
-    Dungeon:Toggle("ESP Flower",false,function(value)
+    Dungeon:Toggle(" vị trí ESP Flower",false,function(value)
         FlowerESP = value
         while FlowerESP do wait()
             UpdateFlowerEsp() 
         end
     end)
     
-    Dungeon:Toggle("ESP Island",IslandESP,function(value)
+    Dungeon:Toggle("vị trí ESP Island",IslandESP,function(value)
         IslandESP = value
         while IslandESP do wait()
             UpdateIslandESP() 
         end
     end)
     
-    DevilFruit:Seperator("「 Sniper 」")
+    DevilFruit:Seperator("「 Bắn Bắn 」")
     
     FruitList = {
         "Bomb-Bomb",
@@ -7535,12 +7534,12 @@ end)
         end)
     end)
     
-    DevilFruit:Button("Random Fruit",function()
+    DevilFruit:Button("Ngẫu Nhiên Fruit",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
     end)
     
     
-    DevilFruit:Toggle("Auto Drop Fruit",_G.DropFruit,function(value)
+    DevilFruit:Toggle("Tự động thả trái cây",_G.DropFruit,function(value)
         _G.DropFruit = value
     end)
         
@@ -7575,7 +7574,7 @@ end)
         end
     end)
     
-    DevilFruit:Toggle("Auto Store Fruit",_G.AutoStoreFruit,function(value)
+    DevilFruit:Toggle("Cất trái cặc t",_G.AutoStoreFruit,function(value)
         _G.AutoStoreFruit = value
     end)
     
@@ -7592,7 +7591,7 @@ end)
     end)
     
     
-    DevilFruit:Toggle("Grab Fruit",_G.BringFruit,function(value)
+    DevilFruit:Toggle("lấy trái cây",_G.BringFruit,function(value)
         _G.BringFruit = value
         pcall(function()
             while _G.BringFruit do wait(.1)
@@ -7609,7 +7608,7 @@ end)
         end)
     end)
     
-    DevilFruit:Toggle("Bring All Fruit 75% Kick System",_G.BringFruitBF,function(value)
+    DevilFruit:Toggle("Mang theo tất cả trái cây Hệ thống đá 75%",_G.BringFruitBF,function(value)
         _G.BringFruitBF = value
     end)
     
@@ -7629,59 +7628,59 @@ end)
     
         Shop:Seperator("「 Abilities 」")
     
-    Shop:Button("Buy Geppo",function()
+    Shop:Button("mua Geppo",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
     end)
     
-    Shop:Button("Buy Buso Haki",function()
+    Shop:Button("mua Buso Haki",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
     end)
     
-    Shop:Button("Buy Soru",function()
+    Shop:Button("mua Soru",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
     end)
     
-    Shop:Button("Buy Observation(Ken) Haki",function()
+    Shop:Button("mua Observation(Ken) Haki",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
     end)
     
     Shop:Seperator("「 Fighting Style")
     
-    Shop:Button("Buy Black Leg",function()
+    Shop:Button("mua Black Leg",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
     end)
     
-    Shop:Button("Buy Electro",function()
+    Shop:Button("mua Electro",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
     end)
     
-    Shop:Button("Buy Fishman Karate",function()
+    Shop:Button("mua Fishman Karate",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
     end)
     
-    Shop:Button("Buy Dragon Claw",function()
+    Shop:Button("mua Dragon Claw",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
     end)
     
-    Shop:Button("Buy Superhuman",function()
+    Shop:Button("mua Superhuman",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
     end)
     
-    Shop:Button("Buy Death Step",function()
+    Shop:Button("mua Death Step",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
     end)
     
-    Shop:Button("Buy Sharkman Karate",function()
+    Shop:Button("mua Sharkman Karate",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
     end)
     
-    Shop:Button("Buy Electric Claw",function()
+    Shop:Button("mua Electric Claw",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
     end)
     
-    Shop:Button("Buy Dragon Talon",function()
+    Shop:Button("mua Dragon Talon",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
     end)
     -----Shop----------------
