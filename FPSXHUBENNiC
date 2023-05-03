@@ -4500,21 +4500,21 @@ spawn(function()
                 pcall(function()
                     xShadowx.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
                     xShadowx.activeController.timeToNextAttack = 0
-                    xShadowx.activeController.hitboxMagnitude = 10000
+                    xShadowx.activeController.hitboxMagnitude = 99999999999
                     xShadowx.activeController.active = false
                     xShadowx.activeController.timeToNextBlock = 0
                     xShadowx.activeController.focusStart = 0
-                    xShadowx.activeController.increment = 1
+                    xShadowx.activeController.increment = 4
                     xShadowx.activeController.blocking = false
                     xShadowx.activeController.attacking = false
-                    xShadowx.activeController.humanoid.AutoRotate = 100
+                    xShadowx.activeController.humanoid.AutoRotate = 50
                 end)
             end
         end
     end)
 end)
 
-Setting:Toggle("Auto lấy Ken Haki",_G.Auto_Ken,function(vu)
+Setting:Toggle("Auto lấy Ken Haki ne",_G.Auto_Ken,function(vu)
 	_G.Auto_Ken = vu
 end)
 spawn(function()
