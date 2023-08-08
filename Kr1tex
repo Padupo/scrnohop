@@ -3799,7 +3799,7 @@ end)
 
  
 --------------------------------------------------------------------
-local Library = Update:Window("FreeFrai HUB ","")
+local Library = Update:Window("Kr1tex HUB ","")
 ------------------------------------------
 
 spawn(function()
