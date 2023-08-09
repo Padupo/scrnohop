@@ -4236,7 +4236,7 @@ Setting:Line()
 
 Setting:Button("Copy Discord Link",function()
  
- setclipboard("https://discord.gg/yPQarTm4")
+ setclipboard("https://discord.gg/BUeebY9b")
  end)
 
 Setting:Seperator(" Setting ")
